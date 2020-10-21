@@ -1,0 +1,97 @@
+.main-nav{
+    background-color: $white;
+    padding: 0 .5rem 0 2.25rem;
+    margin-bottom: 1rem;
+
+    .menu-item{
+        padding: .75rem 0;
+        font-size: 1rem;
+        font-weight: 500;
+
+        .menu-item_counter{
+            margin-left: auto;
+            font-size: .75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 1px solid $yellow-border;
+            border-radius: 50%;
+            
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            margin-right: .75rem;
+        }
+    }
+}
+
+
+.sidebar_section{
+    margin-bottom: 1rem;
+    padding: 1.15rem 1rem;
+    box-shadow: $block-shadow;
+    background-color: $white;
+
+    &.sidebar_buttons{
+        padding: 0;
+    }
+}
+
+.sidebar_section-head{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border-line;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    .head_title{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .head_button{
+        font-size: .75rem;
+        color: $yellow;
+    }
+}
+
+.sidebar_section-content{
+    .socials{
+        padding-top: 1rem;
+    }
+    .socials_item{
+        margin-right: .75rem;
+    }
+}
+
+.sidebar_button{
+    padding:  1.15rem 1rem;
+    display: flex;
+
+    &:not(:last-child){
+        border-bottom: 1px solid $border-line;
+    }
+
+    img {
+        margin-right: .75rem;
+    }
+}
+
+.sidebar_events-item{
+    padding: .5rem 0;
+
+    .date{
+        font-size: .75rem;
+        color: #828282;
+        margin-bottom: .25rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+}

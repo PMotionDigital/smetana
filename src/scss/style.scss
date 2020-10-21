@@ -1,4 +1,19 @@
 @import './parts/vars';
 //
-@import './parts/main';
+@import './parts/main'; 
 
+//components
+
+@import './components/header'; 
+@import './components/footer';
+@import './components/sidebar'; 
+
+//libs
+
+@import './libs/global'; 
+@import './libs/grid'; 
+
+
+//pages
+
+@import './pages/front-page';

@@ -5,14 +5,27 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: $font-stack;
-    background: url(../uploads/test.jpg);
-    &::after {
-        content: 'test scss';
-        display: block;
-        width: 100px;
-        height: 100px;
-        background-image: url(../img/logo.svg);
-    }
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrapper{
+    margin: 0 auto;
 }

@@ -10979,56 +10979,15 @@ return jQuery;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _parts_test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/test */ "./src/js/parts/test.js");
-/* harmony import */ var _parts_test2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/test2 */ "./src/js/parts/test2.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
-// files
-
-//
-
-
-
-console.log(_parts_test2__WEBPACK_IMPORTED_MODULE_1__["default"].obj);
-jquery__WEBPACK_IMPORTED_MODULE_2___default()(function() {
-  jquery__WEBPACK_IMPORTED_MODULE_2___default()("body").css("color", "blue");
-});
-
-
-/***/ }),
-
-/***/ "./src/js/parts/test.js":
-/*!******************************!*\
-  !*** ./src/js/parts/test.js ***!
-  \******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+// files
+//import './parts/test';
 //
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').append(`<h2>testh2</h2>`);
 
-/***/ }),
 
-/***/ "./src/js/parts/test2.js":
-/*!*******************************!*\
-  !*** ./src/js/parts/test2.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const obj = 'test';
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-	obj
-});
 
 /***/ }),
 
