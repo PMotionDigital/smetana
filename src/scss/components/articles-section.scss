@@ -1,0 +1,121 @@
+.articles{
+    &.section{
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .section-head{
+        margin: 0 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.articles_list{
+    background-color: #E5E5E5;
+}
+
+.article{
+    background-color: $white;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    box-shadow: $block-shadow;
+    &:first-child{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        .article_image {
+            &::after {
+                padding-top: 46%;
+            }
+        }
+    }
+
+    &--ads{
+        background-color: $light-yellow;
+        border: 1px solid $yellow-border;
+
+        .favorites{
+            display: none;
+        }
+
+        .article_button-print{
+            display:none;
+        }
+
+
+        .article_hashtag{
+            margin-left: auto;
+            font-weight: bold;
+            margin-right: 0;
+        }
+    }
+}
+.article_title{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.article_desc{
+    padding: 1rem 0;
+    font-size: .875rem;
+}
+
+.article_image{
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    &::after {
+        content: '';
+        display: block;
+        padding-top: 30%; 
+        pointer-events: none;
+    }
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.article_date{
+    color: $grey-text;
+}
+
+.article_hashtag{
+    color: $mustard;
+    margin-right: .5rem;
+    font-size: .75rem;
+}
+
+.article_hashtags{
+    display: flex;
+}
+
+.article_item-top{
+    padding: 1rem 0;
+    font-size: .75rem;
+    align-items: center;
+
+    span{
+        margin-right: 2rem;
+    }
+}
+
+.article_button-print{
+    margin-left: auto;
+}
+
+.article_item-bottom{
+
+    .icon-block{
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        margin-right: 1.75rem;
+        &.comments-icon{
+            background-size: 1rem;
+        }
+    }
+}

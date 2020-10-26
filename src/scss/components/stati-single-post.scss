@@ -1,0 +1,138 @@
+// Post content
+
+
+.kama_breadcrumbs{
+    display: flex;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+    color: $grey-text;
+    span{
+        margin-right: 0.1rem;
+        margin-left: 0.05rem;
+    }
+}
+
+.single-post_title{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.single-post_content .article_image::after{
+    padding-top: 45%;
+}
+
+.single-post_content{
+    display: table;
+    padding-top: 0;
+
+    p{
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        font-size: .875rem;
+    }
+
+    h2{
+        padding: .5rem 0;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    figure{
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    blockquote{
+        background-color: $light-yellow;
+        border: 1px solid $yellow-border;
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+        p{
+            padding: 0;
+            font-size: 1rem;
+        font-weight: 500;
+        }
+    }
+}
+
+.single-post_source,
+.single-post_author{
+    display:inline-block;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.single-post_source{
+    padding-bottom: 0;
+}
+
+.single-post_author{
+    text-transform: capitalize;
+}
+
+
+
+
+// Post comments
+
+
+.single-post_comments{
+    border-radius: .5rem;
+    .comment{
+        margin-top: 1.5rem;
+    }
+}
+
+.single-post_comments-none{
+    padding: 1rem 0 .5rem 0;
+    font-size: .875rem;
+}
+
+.single-post_comments-info{
+    background-color:  $light-yellow;
+    padding: 1.5rem 4.3rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 1rem;
+
+    .button{
+        font-size: .75rem;
+        display: inline;
+    }
+}
+
+
+
+// Post interesting
+
+.single-post_interesting{
+    border-radius: .5rem;
+}
+
+.interesting_list{
+    padding: .5rem 0;
+    align-items: baseline;
+}
+
+.interesting_item-title{
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.interesting_item-desc{
+    padding-bottom: .75rem;
+}
+
+.interesting_item{
+    margin-bottom: 1rem;
+
+    .item-head{
+        padding: .5rem 0 .75rem 0;
+    }
+    .icon-block{
+        display: flex;
+        align-items: center;
+    }
+}

@@ -2,28 +2,28 @@
             <div class="wrapper col-lg-11">
                 <div class="site-footer_section footer-top dis-flex justify-content-between">
                     <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-5">
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Новости</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Рубрикатор</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">События</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Инструменты</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Статьи</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">База знаний</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Дневники</a>
                         </li>
-                        <li class="site-footer_nav-item">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Тезаурус</a>
                         </li>
                     </ul>

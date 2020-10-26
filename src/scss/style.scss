@@ -1,12 +1,20 @@
 @import './parts/vars';
 //
-@import './parts/main'; 
+@import './parts/main';
+
+@import './parts/ui';
 
 //components
 
 @import './components/header'; 
 @import './components/footer';
 @import './components/sidebar'; 
+@import './components/comments-section'; 
+@import './components/blogs'; 
+@import './components/actual';
+@import './components/news-section'; 
+@import './components/articles-section'; 
+@import './components/stati-single-post'; 
 
 //libs
 

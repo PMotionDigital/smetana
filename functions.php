@@ -39,12 +39,7 @@ if (function_exists('acf_add_options_page')) {
     );
 }
 
-// login register
 
-// include 'functions/func-login.php';
-// include 'functions/func-register.php';
-
-// custom gutenberg blocks
 
 
 // автообновление версии файлов
@@ -66,3 +61,8 @@ function themename_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'themename_scripts');
+
+// includes 
+
+include 'functions/global-actions.php';
+include 'functions/breadcrumbs.php';

@@ -1,9 +1,24 @@
 .site-header{
-    padding: .875rem 2.125rem;
+    width: 100%;
+    padding: .875rem 0;
     background-color: $dark-grey;
     display: grid;
     align-items: center;
     grid-template-columns: 19% auto 19%;
+    grid-gap: 1rem;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 4rem;
+}
+
+.site-header_logo{
+    padding-left: 2.125rem;
+
+    img{
+        width: auto;
+    }
 }
 
 
@@ -28,6 +43,7 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1.5rem;
+    margin-right: 2.125rem;
     font-size: .875rem;
     color: $white;
     background: url('../img/icons/exit.svg') right 0 no-repeat;

@@ -1,10 +1,22 @@
+.sidebar{
+    position: sticky;
+    // overflow-y: scroll;
+    // height: calc(100vh - 4rem);
+    top: 4rem;
+    bottom: 0;
+    left: 0;
+    margin-top: -1.5rem;
+    display: table;
+    height: max-content;
+}
+
 .main-nav{
     background-color: $white;
     padding: 0 .5rem 0 2.25rem;
     margin-bottom: 1rem;
+    box-shadow: $block-shadow;
 
     .menu-item{
-        padding: .75rem 0;
         font-size: 1rem;
         font-weight: 500;
 
@@ -22,10 +34,12 @@
         }
 
         a{
+            padding: .75rem 0;
             display: flex;
             align-items: center;
         }
         img{
+            width: auto;
             margin-right: .75rem;
         }
     }
@@ -33,30 +47,9 @@
 
 
 .sidebar_section{
-    margin-bottom: 1rem;
-    padding: 1.15rem 1rem;
-    box-shadow: $block-shadow;
-    background-color: $white;
 
     &.sidebar_buttons{
         padding: 0;
-    }
-}
-
-.sidebar_section-head{
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $border-line;
-    align-items: baseline;
-    flex-wrap: wrap;
-
-    .head_title{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    .head_button{
-        font-size: .75rem;
-        color: $yellow;
     }
 }
 
@@ -79,6 +72,7 @@
 
     img {
         margin-right: .75rem;
+        width: auto;
     }
 }
 
@@ -87,11 +81,63 @@
 
     .date{
         font-size: .75rem;
-        color: #828282;
+        color: $grey-text;
         margin-bottom: .25rem;
     }
 
     h3{
         font-size: 1rem;
+    }
+}
+
+.sidebar-tools{
+    font-size: .875rem;
+    .tools_list{
+        padding: .55rem 0;
+        border-bottom: 1px solid $border-line;
+    }
+
+    .tools_item{
+        padding: .45rem 0;
+        display: flex;
+    }
+
+    .tools_item-name{
+        display: block;
+        font-weight: 500;
+        width: 35%;
+    }
+    .tools_item-value{
+        display: block;
+        margin-right: 1rem;
+    }
+    .tools_item-coeff{
+        display: block;
+        position: relative;
+        color: $green;
+        font-size: .75rem;
+
+        &::after{
+            content:"";
+            position: absolute;
+            width: .5rem;
+            height: .75rem;
+            top: 0;
+            right: -.75rem;
+            background: url('../img/icons/sidebar/arrow-up.svg') center center no-repeat;
+            //background-size: contain;
+        }
+    }
+
+    .tools_button-list{
+        padding: 1rem 0;
+    }
+
+    .tools_button-item{
+        display: block;
+        background-color: $white;
+        border-radius: .125rem;
+        box-shadow: $block-shadow;
+        padding: .5rem 1rem;
     }
 }
