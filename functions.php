@@ -62,6 +62,28 @@ function themename_scripts()
 
 add_action('wp_enqueue_scripts', 'themename_scripts');
 
+
+
+
+
+function menu_item_count($output, $item, $depth, $args) {
+
+	if($item->type == "taxonomy") {
+	
+		$object = get_term($item->object_id, $item->object);
+        //$output .= "(".$object->count.")";
+        $output .= '<span class="menu-item_counter">' . $object->count . '</span>';
+		
+	}    
+	
+	return $output;
+	
+}
+
+add_action("walker_nav_menu_start_el", "menu_item_count", 10, 4);
+
+
+
 // includes 
 
 include 'functions/global-actions.php';

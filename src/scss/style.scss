@@ -14,7 +14,8 @@
 @import './components/actual';
 @import './components/news-section'; 
 @import './components/articles-section'; 
-@import './components/stati-single-post'; 
+@import './components/default-post'; 
+@import './components/default-category'; 
 
 //libs
 
@@ -25,3 +26,6 @@
 //pages
 
 @import './pages/front-page';
+@import './pages/rubricator-page';
+@import './pages/thesaurus-page';
+@import './pages/category-page';

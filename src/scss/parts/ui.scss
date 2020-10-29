@@ -23,9 +23,14 @@
     }
 
     &.reply{
-        color: $yellow;
+        color: $grey-text;
         font-size: .875rem;
         font-weight: 500;
+
+        &:hover,
+        &:focus{
+            color: $yellow;
+        }
     }
 }
 

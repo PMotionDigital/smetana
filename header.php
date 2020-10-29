@@ -12,9 +12,9 @@
     ?>
 <body <?php body_class(array($mobile)); ?>>
     <header class="site-header">
-        <div class="site-header_logo">
+        <a href="/" class="site-header_logo">
             <img src="/wp-content/themes/smetana/dist/img/logo.svg">
-        </div>
+        </a>
         <form class="site-header_search">
             <input type="text" name="search" placeholder="Поиск">
         </form>

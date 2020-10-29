@@ -1,6 +1,8 @@
 <?php
+$post_thumbnail = get_query_var('thumbnail');
 $ads = get_field('реклама');
-        if($ads == 'true'){
+$post_image = get_the_post_thumbnail_url();
+        if($ads && $ads == 'true'){
             $className = 'article--ads';
         } else {
             $className = '';
@@ -39,11 +41,17 @@ $ads = get_field('реклама');
                 <h3 class="article_title"><?php the_title(); ?> </h3>
                 <div class="article_desc"><?php the_excerpt(); ?></div>
                 <?php if(has_post_thumbnail()): ?>
-                <div class="article_image">
-                   <?php the_post_thumbnail(); ?>
-                </div>
+                    <?php if(!$post_thumbnail == 'none') { ?>
+                        <div class="article_image">
+                            <img src="<?php echo $post_image; ?>" alt="<?php the_title(); ?>">s
+                        </div>
+                        <?php } ?>
                 <?php endif; ?>
             </a>
+            <button type="button" class="button yellow ads-button">Ознакомиться</button>
+            <?php if(in_category('novosti')): ?>
+                <button type="button" class="button reply">Развернуть</button>
+            <?php endif; ?>
             <div class="article_item-bottom dis-flex">
                 <button type="button" class="icon-block comments-icon">Комментировать</button>
                 <button type="button" class="icon-block like">Нравится</button>

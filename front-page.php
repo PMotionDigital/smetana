@@ -16,10 +16,6 @@ get_header(); ?>
 
             <?php get_template_part('templates/parts/blogs-section'); ?>
             <?php get_template_part('templates/parts/actual-section'); ?>
-            <?php get_template_part('templates/parts/actual-section'); ?>
-            <?php get_template_part('templates/parts/actual-section'); ?>
-            <?php get_template_part('templates/parts/actual-section'); ?>
-            <?php get_template_part('templates/parts/actual-section'); ?>
         </section>
         <?php get_template_part('templates/parts/comments-section'); ?>
     </main>

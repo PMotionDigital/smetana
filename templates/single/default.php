@@ -20,7 +20,12 @@
             <span class="article_date"><?php echo $date; the_time(' в H:i j F'); ?></span>
             <span class="icon-block views">888</span>
         </div>
-        <div class="article_image"><?php the_post_thumbnail(); ?></div>
+        
+        <?php if(has_post_thumbnail()): ?>
+            <div class="article_image">
+                <?php the_post_thumbnail(); ?>
+            </div>
+        <?php endif; ?>
 
         <?php the_content(); ?>
         <div class="single-post_desc">
@@ -47,50 +52,8 @@
         </div>
     </section>
 
-    <section class="section single-post_comments">
-        <div class="section-head dis-flex justify-content-between">
-            <p class="head_title">Комментарии</p>
-        </div>
-        <div class="section-content">
-            <p class="single-post_comments-none">Под этой статьей комментарии остутствуют</p>
-            <!-- <div class="comments_item comment">
-                <div class="comment_author">
-                    <div class="comment_avatar">
-                        <img src="/wp-content/themes/smetana/dist/img/avatar.png">
-                    </div>
-                    <div class="dis-flex flex-direction-col justify-content-between">
-                        <div class="comment_name">Иванов Иван</div>
-                        <div class="comment_date">15 минут назад</div>
-                    </div>
-                </div>
-                <div class="comment_text">
-                    Следует отметить, что убеждённость некоторых оппонентов предполагает независимые 
-                    способы реализации модели развития.
-                </div>
-                <button type="button" class="button reply">Ответ</button>
-            </div>
-            <div class="comments_item comment">
-                <div class="comment_author">
-                    <div class="comment_avatar">
-                        <img src="/wp-content/themes/smetana/dist/img/avatar.png">
-                    </div>
-                    <div class="dis-flex flex-direction-col justify-content-between">
-                        <div class="comment_name">Иванов Иван</div>
-                        <div class="comment_date">15 минут назад</div>
-                    </div>
-                </div>
-                <div class="comment_text">
-                    Следует отметить, что убеждённость некоторых оппонентов предполагает независимые 
-                    способы реализации модели развития.
-                </div>
-                <button type="button" class="button reply">Ответ</button>
-            </div> -->
-            <div class="single-post_comments-info">
-                <p>Комментарии могут оставлять только зарегистрированные
-                пользователи, пожалуйста, <a href="#" class="button reply">авторизуйтесь</a></p>
-            </div>
-        </div>
-    </section>
+    <?php comments_template('/templates/single/comments.php'); ?>
+    
     <?php 
    
     $orig_post = $post;
@@ -123,9 +86,29 @@
                         <div class="item-head dis-flex">
                             <h2 class="interesting_item-title"><?php the_title(); ?> </h2>
                             <span class="icon-block views">888</span>
+                            <?php $tags = wp_get_post_tags($post->ID); 
+                            if($tags):
+                                $max_count = 1; ?>
+                            <div class="article_hashtags">
+                                <?php foreach($tags as $count => $tag): 
+                                $link = get_term_link($tag->term_id); 
+                                    if($count < $max_count):?>
+                                    <a href="<?php echo $link; ?>" class="article_hashtag"><?php echo '#'.$tag->name; ?></a>
+                                    <?php 
+                                    endif;
+                                endforeach; ?>
+                            </div>
+                            <?php endif; ?>
                         </div>
-                        <div class="interesting_item-desc"><?php the_excerpt(); ?></div>
-                        <button type="button" class="icon-block comments-icon">Комментировать</button>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="interesting_item-desc"><?php the_excerpt(); ?></div>
+                        </a>
+                        <div class="article_item-bottom dis-flex">
+                            <button type="button" class="icon-block comments-icon">Комментировать</button>
+                            <button type="button" class="icon-block like">Нравится</button>
+                            <button type="button" class="icon-block blog-icon">В блог</button>
+                            <button type="button" class="icon-block favorites">В избранное</button>
+                        </div>
                     </li>
                 <?php endwhile; wp_reset_postdata(); ?>
             </ul>
