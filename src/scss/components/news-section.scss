@@ -1,0 +1,30 @@
+.news_section-title{
+    text-align: center;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid $border-line;
+    color: $grey-text;
+    font-size: .75rem;
+}
+
+.news_list{
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+.news_button{
+    margin-top: 1rem;
+}
+
+.news_item{
+    padding-bottom: 1rem;
+}
+
+.news_item-date{
+    font-size: .75rem;
+    color: $grey-text;
+}
+
+.news_item-title{
+    font-size: .875rem;
+    margin-left: 1.5rem;
+}

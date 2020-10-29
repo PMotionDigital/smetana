@@ -1,0 +1,91 @@
+.rubricator-main{
+    display: grid;
+    grid-template-columns: 19% auto 19%;
+    grid-gap: 1rem;
+    background-color: #FAFAFA;
+    padding-top: 5.5rem;
+
+    
+}
+
+.rubricator{
+    height: max-content;
+
+    .head_button{
+        margin-left: 1.5rem;
+    }
+    .head_title{
+        font-size: 1.25rem;
+    }
+}
+
+.rubricator_list{
+    padding-bottom: 2.5rem;
+}
+
+
+.subheading,
+.heading_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading_title,
+.heading_counter{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.subheading_title,
+.subheading_counter{
+    font-size: .875rem;
+}
+
+.heading{
+    margin-bottom: .5rem;
+}
+
+.heading_head{
+    padding: 1rem 0 .5rem 0;
+    border-bottom: .125rem solid $border-line;
+}
+
+.subheading{
+    padding: .75rem 0 .5rem 0;
+    border-bottom: 1px solid $border-line;
+}
+
+.rubrics{
+    .kama_breadcrumbs{
+        font-size: .75rem;
+    }
+    .section-head .head_button{
+        //font-size: .875rem;
+        margin-left: 1rem;
+    }
+}
+
+
+.rubrics_info{
+    border-radius: .5rem;
+    background-color: $light-blue;
+    padding: 1rem;
+    border: 1px solid $border-line;
+    margin: 1rem 0 .5rem 0;
+}
+
+.rubrics_parent-rubric{
+    font-size: .875rem;
+    color: $yellow;
+    margin-bottom: .75rem;
+}
+
+.rubrics_current-rubric{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: .875rem;
+}
+
+.rubrics_desc{
+    font-size: .875rem;
+}

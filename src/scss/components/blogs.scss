@@ -1,0 +1,42 @@
+.blogs{
+    border-radius: .5rem;
+    .section-head{
+        padding-bottom: .75rem;
+    }
+}
+
+.blogs_button{
+    font-weight: bold;
+    color: #D2A902;
+    font-size: .75rem;
+    padding-top: 1rem;
+}
+
+.blogs_list{
+    padding: .625rem 0;
+    border-bottom: 1px solid $border-line;
+}
+
+.blogs_item{
+    padding: .75rem 0;
+    font-size: .875rem;
+}
+
+.blogs_item-avatar{
+    margin-right: 1rem;
+    width: 3.5rem;
+}
+
+.blogs_item-name{
+    font-weight: 500;
+}
+
+.blogs_item-subscribe{
+    align-items: baseline;
+    button{
+        margin-right: 1rem;
+    }
+}
+
+
+

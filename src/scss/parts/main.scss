@@ -4,15 +4,126 @@
     font-weight: 400;
     src: url(../fonts/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Roboto-Light.ttf);
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 1.11vw;
+    color: $black;
+}
 body {
     font-family: $font-stack;
-    background: url(../uploads/test.jpg);
-    &::after {
-        content: 'test scss';
-        display: block;
-        width: 100px;
-        height: 100px;
-        background-image: url(../img/logo.svg);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+textarea{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+
+    &:hover,
+    &:focus{
+        outline: none;
+        //border: none;
     }
+}
+
+.wrapper{
+    margin: 0 auto;
+}
+
+//scroll 
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: $light-grey;
+    background-color: $light-grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    border-color: $light-grey;
+    background-color: $light-grey;
+}
+
+::-webkit-scrollbar-track {
+    border-width: 0;
+}
+
+::-moz-scrollbar {
+    width: 2px;
+}
+
+::-moz-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: $light-grey;
+    background-color: $light-grey;
+}
+
+::-moz-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    border-color: $light-grey;
+    background-color: $light-grey;
+}
+
+::-moz-scrollbar-track {
+    border-width: 0;
 }
