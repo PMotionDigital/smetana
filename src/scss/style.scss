@@ -2,3 +2,30 @@
 //
 @import './parts/main';
 
+@import './parts/ui';
+
+//components
+
+@import './components/header'; 
+@import './components/footer';
+@import './components/sidebar'; 
+@import './components/comments-section'; 
+@import './components/blogs'; 
+@import './components/actual';
+@import './components/news-section'; 
+@import './components/articles-section'; 
+@import './components/default-post'; 
+@import './components/default-category'; 
+
+//libs
+
+@import './libs/global'; 
+@import './libs/grid'; 
+
+
+//pages
+
+@import './pages/front-page';
+@import './pages/rubricator-page';
+@import './pages/thesaurus-page';
+@import './pages/category-page';

@@ -1,0 +1,28 @@
+.category_wrapper{
+    display: grid;
+    grid-template-columns: auto 34%;
+    grid-gap: 1rem;
+    background-color: #FAFAFA;
+    
+}
+
+.category_ads{
+    margin-bottom: 1rem;
+}
+
+.info-reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-yellow;
+    text-align: center;
+    padding: 2rem 2.5rem;
+    border: 1px solid $yellow-border;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    p{
+        margin-bottom: 1.5rem;
+        font-size: .875rem;
+    }
+}

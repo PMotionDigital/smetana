@@ -1,0 +1,40 @@
+.site-footer{
+    background-color: $grey;
+}
+
+.site-footer_section{
+    padding: 1rem 0;
+    font-size: .875rem;
+}
+
+.footer-top{
+    color: $white;
+    border-bottom: 1px solid $border-line;
+
+    .site-footer_nav{
+        font-weight: bold;
+    }
+    .site-footer_nav-item{
+        margin-bottom: 1rem ;
+    }
+}
+
+.footer-bottom{
+    color: #BDBDBD;
+
+    .site-footer_nav-item{
+        margin: 0 1rem 1rem 0;
+    }
+}
+
+.site-footer_age{
+    color: $white;
+    font-size: 1rem;
+    height: max-content;
+    display: flex;
+    align-items: center; 
+
+    span{
+        margin-right: 1rem;
+    }
+}

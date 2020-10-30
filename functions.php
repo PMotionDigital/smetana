@@ -8,11 +8,11 @@ register_nav_menus(array(
 
 // user profile
 
-include 'functions/func-profile.php';
+//include 'functions/func-profile.php';
 
 // custom dashboard
 
-include 'functions/func-users.php';
+//include 'functions/func-users.php';
 
 // settings site
 
@@ -39,12 +39,7 @@ if (function_exists('acf_add_options_page')) {
     );
 }
 
-// login register
 
-include 'functions/func-login.php';
-include 'functions/func-register.php';
-
-// custom gutenberg blocks
 
 
 // автообновление версии файлов
@@ -66,3 +61,30 @@ function themename_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'themename_scripts');
+
+
+
+
+
+function menu_item_count($output, $item, $depth, $args) {
+
+	if($item->type == "taxonomy") {
+	
+		$object = get_term($item->object_id, $item->object);
+        //$output .= "(".$object->count.")";
+        $output .= '<span class="menu-item_counter">' . $object->count . '</span>';
+		
+	}    
+	
+	return $output;
+	
+}
+
+add_action("walker_nav_menu_start_el", "menu_item_count", 10, 4);
+
+
+
+// includes 
+
+include 'functions/global-actions.php';
+include 'functions/breadcrumbs.php';

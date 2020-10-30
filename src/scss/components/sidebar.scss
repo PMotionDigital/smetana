@@ -1,0 +1,150 @@
+.sidebar{
+    position: sticky;
+    // overflow-y: scroll;
+    // height: calc(100vh - 4rem);
+    top: 4rem;
+    bottom: 0;
+    left: 0;
+    margin-top: -1.5rem;
+    display: table;
+    height: max-content;
+}
+
+.main-nav{
+    background-color: $white;
+    padding: 0 .5rem 0 2.25rem;
+    margin-bottom: 1rem;
+    box-shadow: $block-shadow;
+
+    .menu-item{
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+        .menu-image-title-after.menu-image-title {
+            padding-left: 0;
+        }
+
+        .menu-item_counter{
+            margin-left: auto;
+            font-size: .75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 1px solid $yellow-border;
+            border-radius: 50%;
+            
+        }
+
+        a{
+            padding: .75rem 0;
+            display: flex;
+            align-items: center;
+            width: max-content;
+        }
+        img{
+            width: auto;
+            //margin-right: .75rem;
+        }
+    }
+}
+
+
+.sidebar_section{
+
+    &.sidebar_buttons{
+        padding: 0;
+    }
+}
+
+.sidebar_section-content{
+    .socials{
+        padding-top: 1rem;
+    }
+    .socials_item{
+        margin-right: .75rem;
+    }
+}
+
+.sidebar_button{
+    padding:  1.15rem 1rem;
+    display: flex;
+
+    &:not(:last-child){
+        border-bottom: 1px solid $border-line;
+    }
+
+    img {
+        margin-right: .75rem;
+        width: auto;
+    }
+}
+
+.sidebar_events-item{
+    padding: .5rem 0;
+
+    .date{
+        font-size: .75rem;
+        color: $grey-text;
+        margin-bottom: .25rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+}
+
+.sidebar-tools{
+    font-size: .875rem;
+    .tools_list{
+        padding: .55rem 0;
+        border-bottom: 1px solid $border-line;
+    }
+
+    .tools_item{
+        padding: .45rem 0;
+        display: flex;
+    }
+
+    .tools_item-name{
+        display: block;
+        font-weight: 500;
+        width: 35%;
+    }
+    .tools_item-value{
+        display: block;
+        margin-right: 1rem;
+    }
+    .tools_item-coeff{
+        display: block;
+        position: relative;
+        color: $green;
+        font-size: .75rem;
+
+        &::after{
+            content:"";
+            position: absolute;
+            width: .5rem;
+            height: .75rem;
+            top: 0;
+            right: -.75rem;
+            background: url('../img/icons/sidebar/arrow-up.svg') center center no-repeat;
+            //background-size: contain;
+        }
+    }
+
+    .tools_button-list{
+        padding: 1rem 0;
+    }
+
+    .tools_button-item{
+        display: block;
+        background-color: $white;
+        border-radius: .125rem;
+        box-shadow: $block-shadow;
+        padding: .5rem 1rem;
+    }
+}
