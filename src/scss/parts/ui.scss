@@ -1,6 +1,7 @@
 .button{
     display: block;
-
+    cursor: pointer;
+    transition: .15s ease-out;
     &.yellow{
         background-color: $lemon-yellow;
         color: $black;
@@ -9,6 +10,9 @@
         font-size: .75rem;
         font-weight: 500;
         box-shadow: $button-shadow;
+        &:hover {
+            background-color: lighten($lemon-yellow, 10%);
+        }
     }
 
     &.yellow-border{
@@ -20,6 +24,9 @@
         margin-top: .5rem;
         width: max-content;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        &:hover {
+            background-color: lighten($lemon-yellow, 45%);
+        }
     }
 
     &.reply{
@@ -48,7 +55,11 @@
 
     .head_button{
         font-size: .75rem;
-        color: $yellow;
+        color: $grey-text;
+
+        &:hover{
+            color: $yellow;
+        }
     }
 
     &.main-head{
@@ -56,8 +67,12 @@
             font-size: 1.25rem;
         }
         .head_button{
-            color: $mustard;
+            //color: $mustard;
             margin-left: 1.5rem;
+
+            &:hover{
+                color: $mustard;
+            }
         }
     }
 }
@@ -78,6 +93,10 @@
     &.comments-icon{
         background:  url('../img/icons/comment-icon.svg') left center no-repeat;
         background-size: contain;
+
+        &:hover{
+            background-image: url('../img/icons/comment-icon-hover.svg');
+        }
     }
 
     &.views{
@@ -89,24 +108,43 @@
         background-size: contain;
     }
     &.calendar{
-        background:  url('../img/icons/calendar.svg') left 0 no-repeat;
+        background:  url('../img/icons/calendar-hover.svg') left 0 no-repeat;
         background-size: contain;
+        &:hover{
+            background-image: url('../img/icons/calendar.svg');
+        }
     }
     &.undo{
         background:  url('../img/icons/undo.svg') left center no-repeat;
         background-size: 1rem;
+        &:hover{
+            background-image: url('../img/icons/undo-hover.svg');
+        }
     }
     &.like{
         background:  url('../img/icons/like.svg') left center no-repeat;
         background-size: 1rem;
+        &:hover{
+            background-image: url('../img/icons/like-hover.svg');
+        }
     }
     &.blog-icon{
         background:  url('../img/icons/blog-icon.svg') left center no-repeat;
         background-size: 1rem;
+        &:hover{
+            background-image: url('../img/icons/blog-icon-hover.svg');
+        }
     }
     &.favorites{
         background:  url('../img/icons/favorites.svg') left center no-repeat;
         background-size: 1rem;
+        &:hover{
+            background-image: url('../img/icons/favorites-hover.svg');
+        }
+    }
+
+    &:not(.views):not(.subscribers):hover{
+        color: $yellow;
     }
 }
 
@@ -121,9 +159,13 @@
         top: .25rem;
         width: .25rem;
         height: .25rem;
-        border: 1px solid $mustard;
+        border: 1px solid $grey-text;
         border-bottom: none;
         border-left: none;
         transform: rotate(135deg);
+    }
+
+    &:hover::after{
+        border-color: $mustard;
     }
 }

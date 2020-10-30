@@ -33,8 +33,9 @@ $post_image = get_the_post_thumbnail_url();
                     endforeach; ?>
                 </div>
                 <?php endif; ?>
-                <button type="button" class="article_button-print" aria-label="Распечатать">
-                    <img src="<?php bloginfo('template_url'); ?>/dist/img/icons/print.svg">
+                <button type="button" class="article_button-print" aria-label="Распечатать" title="Распечатать">
+                    <img class="default" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print.svg">
+                    <img class="hover" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print-hover.svg">
                 </button>
             </div>
             <a href="<?php the_permalink(); ?>" class="article_item-center">

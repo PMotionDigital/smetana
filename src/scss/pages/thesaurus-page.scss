@@ -33,6 +33,16 @@
     .item{
         font-size: 1rem; 
         padding-bottom: .75rem;
+        padding-right: 1rem;
+
+        a{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &:hover{
+            color: $mustard;
+        }
     }
 }
 
@@ -41,6 +51,9 @@
     li{
         width: 5.55%;
         margin-bottom: .75rem;
+        &:hover .letter{
+            color: $mustard;
+        }
     }
     .letter{
         display: block;

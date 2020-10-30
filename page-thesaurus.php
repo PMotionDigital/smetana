@@ -111,7 +111,7 @@ get_header(); ?>
                                 <a href="#">Автограф</a>
                             </li>
                             <li class="recent_item item col-lg-4">
-                                <a href="#">Барометр</a>
+                                <a href="#" title="Барометр">Барометрбарометрбарометрбарометр</a>
                             </li>
                             <li class="recent_item item col-lg-4">
                                 <a href="#">Гарвард</a>

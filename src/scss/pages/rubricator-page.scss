@@ -24,7 +24,7 @@
 }
 
 
-.subheading,
+.subheading a,
 .heading_head {
     display: flex;
     justify-content: space-between;
@@ -34,6 +34,14 @@
 .heading_counter{
     font-weight: 500;
     font-size: 1rem;
+}
+
+.heading_head:hover{
+    color: $mustard;
+}
+
+.subheading:hover{
+    color: $yellow;
 }
 
 .subheading_title,

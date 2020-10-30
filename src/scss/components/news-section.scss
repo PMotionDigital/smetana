@@ -27,4 +27,8 @@
 .news_item-title{
     font-size: .875rem;
     margin-left: 1.5rem;
+
+    &:hover{
+        color: $mustard;
+    }
 }

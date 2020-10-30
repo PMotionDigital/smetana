@@ -3,7 +3,8 @@
         <div class="single-post_header section-head dis-flex justify-content-between article_item-top">
             <div><?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' / '); ?></div>
             <button type="button" class="article_button-print" aria-label="Распечатать">
-                <img src="<?php bloginfo('template_url'); ?>/dist/img/icons/print.svg">
+                <img class="default" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print.svg">
+                <img class="hover" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print-hover.svg">
             </button>
         </div>
         <h1 class="single-post_title"><?php the_title(); ?></h1>

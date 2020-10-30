@@ -16,142 +16,206 @@ get_header(); ?>
             
             <ul class="rubricator_list">
                 <li class="rubricator_item heading">
-                    <div class="heading_head">
+                    <a href="#" class="heading_head">
                         <h2 class="heading_title">
                             Только реализация намеченных плановых заданий  разочаровала
                         </h2>
                         <span class="heading_counter">12500</span>
-                    </div>
+                    </a>
                     <ul class="heading_list">
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12500</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12499</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12498</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li class="rubricator_item heading">
-                    <div class="heading_head">
+                    <a href="#" class="heading_head">
                         <h2 class="heading_title">
                             Только реализация намеченных плановых заданий  разочаровала
                         </h2>
                         <span class="heading_counter">12500</span>
-                    </div>
+                    </a>
                     <ul class="heading_list">
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12500</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12499</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12498</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li class="rubricator_item heading">
-                    <div class="heading_head">
+                    <a href="#" class="heading_head">
                         <h2 class="heading_title">
                             Только реализация намеченных плановых заданий  разочаровала
                         </h2>
                         <span class="heading_counter">12500</span>
-                    </div>
+                    </a>
                     <ul class="heading_list">
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12500</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12499</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12498</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li class="rubricator_item heading">
-                    <div class="heading_head">
+                    <a href="#" class="heading_head">
                         <h2 class="heading_title">
                             Только реализация намеченных плановых заданий  разочаровала
                         </h2>
                         <span class="heading_counter">12500</span>
-                    </div>
+                    </a>
                     <ul class="heading_list">
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12500</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12499</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12498</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li class="rubricator_item heading">
-                    <div class="heading_head">
+                    <a href="#" class="heading_head">
                         <h2 class="heading_title">
                             Только реализация намеченных плановых заданий  разочаровала
                         </h2>
                         <span class="heading_counter">12500</span>
-                    </div>
+                    </a>
                     <ul class="heading_list">
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12500</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12499</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                         <li class="heading_item subheading">
-                            <h3 class="subheading_title">
-                                Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
-                            </h3>
-                            <span class="subheading_counter">12498</span>
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="rubricator_item heading">
+                    <a href="#" class="heading_head">
+                        <h2 class="heading_title">
+                            Только реализация намеченных плановых заданий  разочаровала
+                        </h2>
+                        <span class="heading_counter">12500</span>
+                    </a>
+                    <ul class="heading_list">
+                        <li class="heading_item subheading">
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
+                        </li>
+                        <li class="heading_item subheading">
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
+                        </li>
+                        <li class="heading_item subheading">
+                            <a href="#">
+                                <h3 class="subheading_title">
+                                    Давайте не забывать, что новая модель организационной деятельности процветает, как ни в чем не бывало
+                                </h3>
+                                <span class="subheading_counter">12500</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
