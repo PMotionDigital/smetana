@@ -46,14 +46,14 @@
                 <?php endif; ?>
             <span class="single-post_author"><?php echo get_the_author_meta('display_name', $author_id); ?></span>
         </div>
-        <div class="article_item-bottom dis-flex">
+        <!-- <div class="article_item-bottom dis-flex">
             <button type="button" class="icon-block like">Нравится</button>
             <button type="button" class="icon-block blog-icon">В блог</button>
             <button type="button" class="icon-block favorites">В избранное</button>
-        </div>
+        </div> -->
     </section>
 
-    <?php comments_template('/templates/single/comments.php'); ?>
+    <?php //comments_template('/templates/single/comments.php'); ?>
     
     <?php 
    
@@ -104,12 +104,12 @@
                         <a href="<?php the_permalink(); ?>">
                             <div class="interesting_item-desc"><?php the_excerpt(); ?></div>
                         </a>
-                        <div class="article_item-bottom dis-flex">
+                        <!-- <div class="article_item-bottom dis-flex">
                             <button type="button" class="icon-block comments-icon">Комментировать</button>
                             <button type="button" class="icon-block like">Нравится</button>
                             <button type="button" class="icon-block blog-icon">В блог</button>
                             <button type="button" class="icon-block favorites">В избранное</button>
-                        </div>
+                        </div> -->
                     </li>
                 <?php endwhile; wp_reset_postdata(); ?>
             </ul>

@@ -1,0 +1,83 @@
+.diaries_head{
+    padding: 1rem;
+    padding-bottom: .5rem;
+    background-color: $blue;
+    border: 1px solid $border-line;
+    border-bottom: none;
+}
+
+.diaries_title{
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.diaries_info{
+    font-size: .875rem;
+}
+
+.diaries_item{
+    padding: 1rem;
+    background-color: $blue;
+    border: 1px solid $border-line;
+    margin-bottom: 1rem;
+
+    &:first-child{
+        border-top: transparent;
+    }
+}
+
+.diaries_item-top{
+    margin-bottom: 1.125rem;
+}
+
+.diaries_item-author{
+    align-items: center;
+}
+
+.diaries_item-avatar{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.diaries_item-name{
+    font-size: .875rem;
+}
+
+.diaries_item-date{
+    color: $grey-text;
+    font-size: .75rem;
+}
+
+.diaries_item-title{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: .625rem;
+}
+
+.diaries_item-desc{
+    margin-bottom: 1rem;
+    font-size: .875rem;
+}
+
+.diaries_item-image{
+    margin-bottom: 1rem;
+}
+
+.diaries_item-bottom{
+    padding-top: .5rem;
+    min-height: 1.5rem;
+
+    .icon-block{
+        margin-right: 1rem;
+    }
+}
+
+.diaries_hashtag{
+    margin-right: 2rem;
+    color: $grey-text;
+
+    &:hover{
+        color: $yellow;
+    }
+}

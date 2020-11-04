@@ -10979,15 +10979,39 @@ return jQuery;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parts_sorting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/sorting */ "./src/js/parts/sorting.js");
+/* harmony import */ var _parts_sorting__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_parts_sorting__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 // files
-//import './parts/test';
+    
 //
 
 
 
 
+
+/***/ }),
+
+/***/ "./src/js/parts/sorting.js":
+/*!*********************************!*\
+  !*** ./src/js/parts/sorting.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const sortingButtons = document.querySelectorAll('button[data-sorting]');
+
+for (let i = 0; i < sortingButtons.length; i++) {
+    const button = sortingButtons[i];
+
+    button.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        button.classList.add('button-sorting--active');
+        //button.closest('div[data-sorting]').classList.add('sorting--opened');
+        console.log(button.closest('div[data-sorting]'));
+    })
+}
 
 /***/ }),
 

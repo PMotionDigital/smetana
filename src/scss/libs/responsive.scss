@@ -1,0 +1,8 @@
+@media screen and (min-width: 1650px) {
+     html{
+        font-size: 16px;
+     }
+     .site-main {
+        grid-template-columns: 15% minmax(auto, 60rem) 15% !important;
+     }
+}

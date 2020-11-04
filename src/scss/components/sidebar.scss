@@ -1,13 +1,13 @@
 .sidebar{
     position: sticky;
-    // overflow-y: scroll;
-    // height: calc(100vh - 4rem);
+    overflow-y: scroll;
+    height: calc(100vh - 4rem);
     top: 4rem;
     bottom: 0;
     left: 0;
     margin-top: -1.5rem;
-    display: table;
-    height: max-content;
+    // display: table;
+    // height: max-content;
 }
 
 .main-nav{
@@ -88,6 +88,10 @@
     padding:  1.15rem 1rem;
     display: flex;
 
+    &:hover{
+        background-color: #FDF4D5;
+    }
+
     &:not(:last-child){
         border-bottom: 1px solid $border-line;
     }
@@ -110,6 +114,10 @@
     h3{
         font-size: 1rem;
     }
+
+    &:hover h3{
+        color: $yellow;
+    }
 }
 
 .sidebar-tools{
@@ -122,6 +130,10 @@
     .tools_item{
         padding: .45rem 0;
         display: flex;
+
+        &:hover .tools_item-name{
+            color: $yellow;
+        }
     }
 
     .tools_item-name{

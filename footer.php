@@ -1,3 +1,6 @@
+</section>
+<?php get_template_part('templates/parts/comments-section'); ?>
+    </main>
         <footer class="site-footer">
             <div class="wrapper col-lg-11">
                 <div class="site-footer_section footer-top dis-flex justify-content-between">
@@ -52,7 +55,16 @@
                             <a href="#">Правила пользования материалами</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">Предоставление рекламного пространства</a>
+                            <a href="#">О проекте</a>
+                        </li>
+                        <li class="site-footer_nav-item">
+                            <a href="#">Реклама</a>
+                        </li>
+                        <li class="site-footer_nav-item">
+                            <a href="#">Контакты редакции</a>
+                        </li>
+                        <li class="site-footer_nav-item">
+                            <a href="#">Работа</a>
                         </li>
                     </ul>
                     <div class="site-footer_age">

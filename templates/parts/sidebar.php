@@ -103,22 +103,22 @@
             <ul class="dis-flex flex-wrap-wrap socials">
                 <li class="socials_item">
                     <a href="#">
-                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/instagram.svg">
+                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/vk.png">
                     </a>
                 </li>
                 <li class="socials_item">
                     <a href="#">
-                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/instagram.svg">
+                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/telegram.png">
                     </a>
                 </li>
                 <li class="socials_item">
                     <a href="#">
-                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/instagram.svg">
+                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/facebook.png">
                     </a>
                 </li>
                 <li class="socials_item">
                     <a href="#">
-                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/instagram.svg">
+                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/odnoklassniki.png">
                     </a>
                 </li>
                 <li class="socials_item">

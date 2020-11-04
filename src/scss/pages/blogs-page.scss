@@ -1,0 +1,119 @@
+.main_blogs .head_button{
+    margin-left: 1rem;
+}
+
+
+.main-blogs_desc{
+    margin: 1rem 0;
+}
+
+.main_blogs-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.main_blogs-info{
+    padding: 1rem;
+    border: 1px solid $yellow-border;
+    background-color: $light-yellow;
+    border-radius: .25rem;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+
+    a{
+        display: inline;
+        color: $yellow;
+    }
+
+    .button{
+        display: block;
+        width: max-content;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+.blog-element {
+    .article_item-top {
+        padding-top: 0;
+
+        span{
+            margin-right: 1rem;
+        }
+    }
+
+    .article_desc{
+        padding-top: 0;
+    }
+
+    .article_title{
+        margin-bottom: 1rem;
+    }
+}
+
+.blog-element--image{
+    .article_item-center {
+        position: relative;
+        width: calc(100% + 2rem);
+        transform: translateX(-1rem);
+        margin-bottom: 1rem;
+    }
+
+    .article_desc{
+        padding: 1rem;
+        position: absolute;
+        bottom: 0;
+        color: $white;
+        z-index: 2;
+    }
+    .article_thumbnail {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        &::after {
+            content: '';
+            display: block;
+            padding-top: 45%;
+            position: relative;
+            z-index: 1;
+            pointer-events: none;
+            background:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(212, 212, 212, 0) 26.04%, rgba(0, 0, 0, 0.23) 56.25%, rgba(0, 0, 0, 0.76) 100%);
+        }
+        img {
+            position: absolute;
+            left: 0; 
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.blog-element_author{
+    img{
+        width: 1.5rem;
+        margin-right: .5rem;
+    }
+
+    .name{
+        margin: auto 2rem auto 0;
+        font-size: .875rem;
+    }
+}
+
+.company-blogs{
+    .blogs_item-name{
+        font-size: 1rem;
+        margin-bottom: .3rem;
+    }
+}
+.company-blogs_desc{
+    margin-top: .875rem;
+    font-size: .875rem;
+}

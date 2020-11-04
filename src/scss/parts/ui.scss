@@ -47,6 +47,7 @@
     border-bottom: 1px solid $border-line;
     align-items: baseline;
     flex-wrap: wrap;
+    position: relative;
 
     .head_title{
         font-size: 1rem;
@@ -89,10 +90,11 @@
     color: $grey-text;
     font-size: .75rem;
     padding-left: 1.5rem;
+    min-height: .5rem;
 
     &.comments-icon{
         background:  url('../img/icons/comment-icon.svg') left center no-repeat;
-        background-size: contain;
+        background-size: 1rem;
 
         &:hover{
             background-image: url('../img/icons/comment-icon-hover.svg');
@@ -151,6 +153,7 @@
 .button-sorting{
     position: relative;
     padding-right: 1rem;
+    margin-left: 1.5rem;
 
     &::after{
         position: absolute;
@@ -163,9 +166,68 @@
         border-bottom: none;
         border-left: none;
         transform: rotate(135deg);
+        transition: .2s ease-out;
     }
 
     &:hover::after{
         border-color: $mustard;
     }
+
+
+    &--active{
+        color: $mustard;
+
+        &::after{
+            transform: rotate(-45deg);
+            border-color: $mustard;
+        }
+    }
+}
+
+.hashtag{
+    color: $mustard;
+    margin-right: .5rem;
+    font-size: .75rem;
+}
+
+
+.subscription-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-green;
+    border: 1px solid $green-border;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.subscription_title{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.subscription_input{
+    background-color: #FAFAFA;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border: 1px solid #EEF7FF;
+    padding: .75rem 1rem;
+    font-size: .875rem;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.15);
+    flex-grow: 1;
+
+    &::placeholder{
+        font-size: .875rem;
+        color: $border-line;
+    }
+}
+
+.subscription_button{
+    border: 1px solid $green-border;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    background:  url('../img/icons/check.svg') center no-repeat $white;
+    width: 3rem;
+    height: 3rem;
 }

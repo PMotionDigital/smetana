@@ -12,8 +12,9 @@ if($posts): ?>
         <h2 class="head_title">Статьи</h2>
         <div>
             <button type="button" class="icon-block calendar head_button">Период</button>
-            <button type="button" class="head_button button-sorting">Сортировка</button>
+            <button type="button" class="head_button button-sorting" data-sorting>Сортировка</button>
         </div>
+        <?php get_template_part('templates/components/sorting'); ?>
     </div>
     <ul class="articles_list">
         <?php foreach($posts as $post): setup_postdata($post);

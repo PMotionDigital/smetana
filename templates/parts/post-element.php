@@ -50,13 +50,13 @@ $post_image = get_the_post_thumbnail_url();
                 <?php endif; ?>
             </a>
             <button type="button" class="button yellow ads-button">Ознакомиться</button>
-            <?php if(in_category('novosti')): ?>
+            <?php if(!in_category('stati')): ?>
                 <button type="button" class="button reply">Развернуть</button>
             <?php endif; ?>
-            <div class="article_item-bottom dis-flex">
+            <!-- <div class="article_item-bottom dis-flex">
                 <button type="button" class="icon-block comments-icon">Комментировать</button>
                 <button type="button" class="icon-block like">Нравится</button>
                 <button type="button" class="icon-block blog-icon">В блог</button>
                 <button type="button" class="icon-block favorites">В избранное</button>
-            </div>
+            </div> -->
         </li>

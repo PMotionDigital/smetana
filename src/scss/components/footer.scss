@@ -16,6 +16,13 @@
     }
     .site-footer_nav-item{
         margin-bottom: 1rem ;
+        a{
+            width: 100%;
+        }
+
+        &:hover{
+            color: $yellow;
+        }
     }
 }
 
@@ -24,6 +31,14 @@
 
     .site-footer_nav-item{
         margin: 0 1rem 1rem 0;
+
+        a{
+            width: 100%;
+        }
+
+        &:hover{
+            color: $mustard;
+        }
     }
 }
 
@@ -37,4 +52,8 @@
     span{
         margin-right: 1rem;
     }
+}
+
+.site-footer_subscription a:hover{
+    color: $yellow;
 }

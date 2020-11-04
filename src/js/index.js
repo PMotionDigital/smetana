@@ -1,5 +1,5 @@
 // files
-//import './parts/test';
+    import './parts/sorting';
 //
 
 import $ from "jquery";

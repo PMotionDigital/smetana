@@ -16,11 +16,13 @@
 @import './components/articles-section'; 
 @import './components/default-post'; 
 @import './components/default-category'; 
+@import './components/sorting-block'; 
 
 //libs
 
 @import './libs/global'; 
 @import './libs/grid'; 
+@import './libs/responsive'; 
 
 
 //pages
@@ -29,3 +31,5 @@
 @import './pages/rubricator-page';
 @import './pages/thesaurus-page';
 @import './pages/category-page';
+@import './pages/blogs-page';
+@import './pages/diaries-page';

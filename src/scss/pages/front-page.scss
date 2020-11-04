@@ -1,9 +1,16 @@
 .site-main{
     display: grid;
-    grid-template-columns: 19% auto 20% 19%;
+    justify-content: space-between;
+    grid-template-columns: 19% minmax(auto, 54rem) 19%;
     grid-gap: 1rem;
     background-color: #FAFAFA;
     padding-top: 5.5rem;
+    &_wrapper{
+        display: grid;
+        grid-template-columns: minmax(auto, 64%) 34%;
+        grid-gap: 1rem;
+        background-color: #FAFAFA;
+    }
 }
 
 .site-main_third-section{
@@ -18,4 +25,7 @@
     .section{
         border-radius: .5rem;
     }
+}
+.full-center {
+    grid-column: 1/3;
 }

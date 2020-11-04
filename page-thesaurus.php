@@ -3,8 +3,7 @@
 Template name:  Страница тезаурус
 */
 get_header(); ?>
-    <main class="site-main thesaurus-main">
-        <?php get_template_part('templates/parts/sidebar'); ?>
+
         <section class="site-main_main-section main">
             <section class="main-thesaurus thesaurus section">
                 <div class="section-head dis-flex justify-content-between">
@@ -430,6 +429,5 @@ get_header(); ?>
                 <img src="<?php bloginfo('template_url'); ?>/dist/img/ads-image.png">
             </section>
         </section>
-        <?php get_template_part('templates/parts/comments-section'); ?>
-    </main>
+    
 <?php get_footer(); ?>

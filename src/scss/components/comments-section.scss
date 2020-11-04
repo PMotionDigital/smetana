@@ -3,9 +3,9 @@
     top: 4rem;
     bottom: 0;
     right: 0;
-    height: max-content;
-    // height: calc(100vh - 4rem);
-    // overflow-y: scroll;
+    //height: max-content;
+    height: calc(100vh - 4rem);
+    overflow-y: scroll;
 
     &.section{
         margin-bottom: 0;

@@ -1,0 +1,35 @@
+.sorting{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 11rem;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    background-color: $white;
+    border-radius: .25rem;
+    z-index: 100000;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+
+    &--opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.sorting_item{
+    width: 100%;
+    padding: .625rem 1rem;
+    font-size: .75rem;
+    text-align: left;
+
+
+    &--current{
+        background-color: $light-orange;
+    }
+
+    &:hover{
+        background-color: $orange;
+    }
+}

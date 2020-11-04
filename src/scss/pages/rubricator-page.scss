@@ -4,8 +4,6 @@
     grid-gap: 1rem;
     background-color: #FAFAFA;
     padding-top: 5.5rem;
-
-    
 }
 
 .rubricator{
@@ -75,11 +73,13 @@
 
 
 .rubrics_info{
+    position: relative;
+    margin: 1rem;
     border-radius: .5rem;
     background-color: $light-blue;
     padding: 1rem;
     border: 1px solid $border-line;
-    margin: 1rem 0 .5rem 0;
+    // margin: 1rem 0 .5rem 0;
 }
 
 .rubrics_parent-rubric{

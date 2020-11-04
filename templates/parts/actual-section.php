@@ -9,7 +9,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -20,7 +20,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -31,7 +31,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -42,7 +42,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -53,7 +53,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -64,7 +64,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -75,7 +75,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
@@ -86,7 +86,7 @@
                     Являясь всего лишь частью общей картины, явные признаки победы.
                 </p>
                 <div class="actual_item-desc dis-flex">
-                    <span class="comments-icon icon-block">18</span>
+                    <!-- <span class="comments-icon icon-block">18</span> -->
                     <span class="views icon-block">888</span>
                 </div>
             </a>
