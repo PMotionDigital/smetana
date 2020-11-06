@@ -3,7 +3,7 @@
         <?php echo do_shortcode('[widget id="nav_menu-2"]'); ?>
     </nav>
     
-    <div class="sidebar_section sidebar-tools section">
+    <!-- <div class="sidebar_section sidebar-tools section">
         <div class="section-head dis-flex justify-content-between">
             <h2 class="head_title">Инструменты</h2>
             <a href="#" class="head_button">Смотреть все</a>
@@ -44,8 +44,8 @@
                 <a href="#">Рассчёт НМЦК</a>
             </div>
         </div>
-    </div>
-    <div class="sidebar_section section">
+    </div> -->
+    <!-- <div class="sidebar_section section">
         <div class="section-head dis-flex justify-content-between">
             <h2 class="head_title">События</h2>
             <a href="#" class="head_button">Смотреть все</a>
@@ -84,7 +84,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="sidebar_section sidebar_buttons section">
         <a class="sidebar_button" href="#">
             <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/about.svg">

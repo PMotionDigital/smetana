@@ -17,7 +17,7 @@
             <img class="logo-hover" src="/wp-content/themes/smetana/dist/img/logo-hover.svg">
         </a>
         <form class="site-header_search">
-            <input type="text" name="search" placeholder="Поиск">
+            <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
         </form>
         <!-- <div class="site-header_user-nav user-nav">
             <a class="user-nav_login" href="#">Войти</a>

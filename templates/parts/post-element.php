@@ -51,7 +51,7 @@ $post_image = get_the_post_thumbnail_url();
             </a>
             <button type="button" class="button yellow ads-button">Ознакомиться</button>
             <?php if(!in_category('stati')): ?>
-                <button type="button" class="button reply">Развернуть</button>
+                <button type="button" class="button reply" data-expand="<?php echo the_ID(); ?>">Развернуть</button>
             <?php endif; ?>
             <!-- <div class="article_item-bottom dis-flex">
                 <button type="button" class="icon-block comments-icon">Комментировать</button>

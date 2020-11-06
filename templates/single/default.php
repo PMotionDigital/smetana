@@ -1,7 +1,11 @@
 <section class="single-post">
    <section class="section single-post_content">
         <div class="single-post_header section-head dis-flex justify-content-between article_item-top">
-            <div><?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' / '); ?></div>
+            <div><?php
+if ( function_exists('yoast_breadcrumb') ) {
+  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+}
+?></div>
             <button type="button" class="article_button-print" aria-label="Распечатать">
                 <img class="default" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print.svg">
                 <img class="hover" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print-hover.svg">

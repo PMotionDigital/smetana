@@ -40,19 +40,50 @@
 }
 
 
-.site-header_search{
-    input{
-        width: 20rem;
-        padding: .625rem .75rem;
-        border-radius: .25rem;
-        font-size: .75rem;
-        border: none;
-        outline: none;
-        background-color: $white;
+// #ajaxsearchlite1 {
+//     //input{
+//         width: 20rem;
+//         padding: .625rem .75rem;
+//         border-radius: .25rem;
+//         font-size: .75rem;
+//         border: none;
+//         outline: none;
+//         background-color: $white;
 
-        &::placeholder{
-            color: #BDBDBD;
+//         &::placeholder{
+//             color: #BDBDBD;
 
+//         }
+//     //}
+// }
+
+#ajaxsearchlite1,
+div.asl_w {
+    width: 20rem;
+    border-radius: .25rem !important; 
+
+    .probox{
+        border-radius: .25rem !important;
+        padding: .125rem 0 !important;
+        .promagnifier{
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        .proclose svg{
+            width: 1rem;
+            height: 1rem;
+            margin-top: 0;
+            transform: translateY(-50%);
+        }
+        .proloading .asl_loader{
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            margin-top: .4rem;
+        }
+        div.asl_simple-circle{
+            border-width: 2px;
         }
     }
 }

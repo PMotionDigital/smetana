@@ -11,28 +11,28 @@
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Рубрикатор</a>
                         </li>
-                        <li class="site-footer_nav-item col-lg-3">
+                        <!-- <li class="site-footer_nav-item col-lg-3">
                             <a href="#">События</a>
                         </li>
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Инструменты</a>
-                        </li>
+                        </li> -->
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Статьи</a>
                         </li>
-                        <li class="site-footer_nav-item col-lg-3">
+                        <!-- <li class="site-footer_nav-item col-lg-3">
                             <a href="#">База знаний</a>
                         </li>
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Дневники</a>
-                        </li>
+                        </li> -->
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Тезаурус</a>
                         </li>
                     </ul>
-                    <div class="site-footer_subscription">
+                    <!-- <div class="site-footer_subscription">
                         <a href="#">Оформить подписку</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="site-footer_section footer-bottom dis-flex justify-content-between">
                     <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-8">
