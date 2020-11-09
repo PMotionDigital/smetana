@@ -53,57 +53,31 @@ get_header(); ?>
                 <div class="section-head">
                     <h2 class="head_title">Вы недавно смотрели</h2>
                 </div>
+                <?php
+                echo $_COOKIE['viewedProd'];
+                if ( $_COOKIE['viewedProd'] ){
+                    // echo 'Вы просмотрели следующие посты:<br>';
+                    foreach ($_COOKIE['viewedProd'] as $viewedProdId ){
+                        $viewedProd = get_post( $viewedProdId );
+                        get_template_part('templates/parts/post-element');
+                    }
+                    
+                }
+                
+                ?>
                 <ul>
                     <li class="interesting_item">
                         <div class="item-head dis-flex">
-                            <h3 class="interesting_item-title">Учитывая </h3>
+                            <a href="#"><h3 class="interesting_item-title">Учитывая </h3></a>
                             <span class="icon-block views">888</span>
                             <div class="article_hashtags">
                                 <a href="#" class="article_hashtag">#Автограф</a>
                             </div>
                         </div>
-                        <a href="#" class="interesting_item-desc">
+                        <div class="interesting_item-desc">
                             Прежде всего, начало повседневной работы по формированию позиции не
                             оставляет шанса для системы обучения кадров, соответствующей.
-                        </a>
-                        <div class="article_item-bottom dis-flex">
-                            <button type="button" class="icon-block comments-icon">Комментировать</button>
-                            <button type="button" class="icon-block like">Нравится</button>
-                            <button type="button" class="icon-block blog-icon">В блог</button>
-                            <button type="button" class="icon-block favorites">В избранное</button>
-                        </div>
-                    </li>
-                    <li class="interesting_item">
-                        <div class="item-head dis-flex">
-                            <h3 class="interesting_item-title">Учитывая </h3>
-                            <span class="icon-block views">888</span>
-                            <div class="article_hashtags">
-                                <a href="#" class="article_hashtag">#Автограф</a>
-                            </div>
-                        </div>
-                        <a href="#" class="interesting_item-desc">
-                            Прежде всего, начало повседневной работы по формированию позиции не
-                            оставляет шанса для системы обучения кадров, соответствующей.
-                        </a>
-                        <div class="article_item-bottom dis-flex">
-                            <button type="button" class="icon-block comments-icon">Комментировать</button>
-                            <button type="button" class="icon-block like">Нравится</button>
-                            <button type="button" class="icon-block blog-icon">В блог</button>
-                            <button type="button" class="icon-block favorites">В избранное</button>
-                        </div>
-                    </li>
-                    <li class="interesting_item">
-                        <div class="item-head dis-flex">
-                            <h3 class="interesting_item-title">Учитывая </h3>
-                            <span class="icon-block views">888</span>
-                            <div class="article_hashtags">
-                                <a href="#" class="article_hashtag">#Автограф</a>
-                            </div>
-                        </div>
-                        <a href="#" class="interesting_item-desc">
-                            Прежде всего, начало повседневной работы по формированию позиции не
-                            оставляет шанса для системы обучения кадров, соответствующей.
-                        </a>
+                                </div>
                         <div class="article_item-bottom dis-flex">
                             <button type="button" class="icon-block comments-icon">Комментировать</button>
                             <button type="button" class="icon-block like">Нравится</button>

@@ -1,5 +1,7 @@
 <?php 
-get_header(); ?>
+global $post;
+get_header(); 
+?>
 
         <section class="site-main_main-section main">
             <section class="main-thesaurus thesaurus section">
@@ -37,31 +39,21 @@ get_header(); ?>
                 </div>
                 <ul>
                 <?php
+                     // args
 
-                // $posts = get_posts(array(
-                //     'numberposts'	=> -1,
-                //     'post_type'		=> 'post',
-                //     'meta_query'	=> array(
-                //        array(
-                //             'key'	 	=> 'тезаурус',
-                //             'value'	  	=> get_the_ID(),
-                //             'compare' 	=> 'IN'
-                //         )
-                //     )
-                // ));
+                    $cur_post = $post->ID;
 
-                // foreach ($posts as $post) {
-                //     setup_postdata($post);
-                //     get_template_part( 'templates/parts/post-element');
-                // }
-                // wp_reset_postdata();
-                
-                    // args
                     $args = array(
                         'numberposts'	=> -1,
                         'post_type'		=> 'post',
-                        'meta_key'		=> 'тезаурус',
-                        'meta_value'	=> get_the_ID()
+                        'meta_query'    => array (
+                            'relation'  => 'AND',
+                            array(
+                                'key'   => 'тезаурус',
+                                'value' => $cur_post,
+                                'compare' => 'LIKE'
+                            )
+                        )
                     );
 
 
@@ -73,6 +65,7 @@ get_header(); ?>
                         
                         <?php while( $the_query->have_posts() ) :
                             $the_query->the_post(); 
+                            set_query_var('thumbnail', 'none');
                             get_template_part( 'templates/parts/post-element');
                         endwhile; ?>
                         

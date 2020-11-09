@@ -49,8 +49,12 @@ $post_image = get_the_post_thumbnail_url();
                         <?php } ?>
                 <?php endif; ?>
             </a>
-            <button type="button" class="button yellow ads-button">Ознакомиться</button>
-            <?php if(!in_category('stati')): ?>
+            <?php
+            $ads = get_field('реклама');
+            if($ads == 'true'): ?>
+                <button type="button" class="button yellow ads-button">Ознакомиться</button>
+            <?php endif; ?>
+            <?php if(!in_category('stati') || is_singular( 'tezaurus' )): ?>
                 <button type="button" class="button reply" data-expand="<?php echo the_ID(); ?>">Развернуть</button>
             <?php endif; ?>
             <!-- <div class="article_item-bottom dis-flex">

@@ -2,10 +2,24 @@
    <section class="section single-post_content">
         <div class="single-post_header section-head dis-flex justify-content-between article_item-top">
             <div><?php
-if ( function_exists('yoast_breadcrumb') ) {
-  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-}
-?></div>
+                // if ( function_exists('yoast_breadcrumb') ) {
+                // yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                // }
+                if(!in_category('novosti') && !in_category('stati')){ ?>
+                    <div class="kama_breadcrumbs">
+                        <span>
+                            <a href="/">Главная /</a>
+                        </span>
+                        <span>
+                            <?php $cat_id = get_cat_ID('Статьи'); 
+                            $cat_link = get_category_link($cat_id); ?>
+                            <a href="<?php echo $cat_link; ?>"> Статьи</a>
+                        </span>
+                    </div>
+                <?php } elseif ( function_exists('yoast_breadcrumb')) {
+                    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                } ?>
+            </div>
             <button type="button" class="article_button-print" aria-label="Распечатать">
                 <img class="default" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print.svg">
                 <img class="hover" src="<?php bloginfo('template_url'); ?>/dist/img/icons/print-hover.svg">
@@ -48,7 +62,7 @@ if ( function_exists('yoast_breadcrumb') ) {
                     endforeach; ?>
                 </div>
                 <?php endif; ?>
-            <span class="single-post_author"><?php echo get_the_author_meta('display_name', $author_id); ?></span>
+            <span class="single-post_author"><?php echo get_the_author_meta('display_name', get_the_author_ID()); ?></span>
         </div>
         <!-- <div class="article_item-bottom dis-flex">
             <button type="button" class="icon-block like">Нравится</button>
@@ -74,7 +88,7 @@ if ( function_exists('yoast_breadcrumb') ) {
         'tag__in' => $tag_ids,
         'post__not_in' => array($post->ID),
         'posts_per_page'=>3, // Number of related posts to display.
-        'caller_get_posts'=>1
+        'ignore_sticky_posts'=>1
       );
        
       $my_query = new wp_query( $args );
@@ -89,7 +103,9 @@ if ( function_exists('yoast_breadcrumb') ) {
                 <?php while($my_query->have_posts()):$my_query->the_post(); ?>
                     <li class="interesting_item">
                         <div class="item-head dis-flex">
-                            <h2 class="interesting_item-title"><?php the_title(); ?> </h2>
+                            <a href="<?php the_permalink(); ?>">
+                                <h2 class="interesting_item-title"><?php the_title(); ?> </h2>
+                            </a>
                             <span class="icon-block views">888</span>
                             <?php $tags = wp_get_post_tags($post->ID); 
                             if($tags):
@@ -105,9 +121,7 @@ if ( function_exists('yoast_breadcrumb') ) {
                             </div>
                             <?php endif; ?>
                         </div>
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="interesting_item-desc"><?php the_excerpt(); ?></div>
-                        </a>
+                        <div class="interesting_item-desc"><?php the_excerpt(); ?></div>
                         <!-- <div class="article_item-bottom dis-flex">
                             <button type="button" class="icon-block comments-icon">Комментировать</button>
                             <button type="button" class="icon-block like">Нравится</button>

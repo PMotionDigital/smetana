@@ -1,0 +1,31 @@
+#breadcrumbs{
+    color: $grey-text;
+    padding: 0;
+    font-size: .75rem;
+    a{
+        display: inline;
+    }
+    a:hover{
+        color: $yellow;
+    }
+
+    .breadcrumb_last{
+        display: none;
+    }
+}
+
+.kama_breadcrumbs{
+    display: flex;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+    color: $grey-text;
+    font-size: .75rem;
+    span{
+        margin-right: 0.1rem;
+        margin-left: 0.05rem;
+    }
+
+    a:hover{
+        color: $yellow;
+    }
+}

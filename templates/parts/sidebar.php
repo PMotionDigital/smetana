@@ -91,7 +91,7 @@
             <p>О проекте</p>
         </a>
         <a class="sidebar_button" href="#">
-            <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/adds.svg">
+            <img src="<?php bloginfo('template_url'); ?>/dist/img/icons/sidebar/ads.svg">
             <p>Реклама</p>
         </a>
     </div>

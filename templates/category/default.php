@@ -12,7 +12,7 @@ if(have_posts()): ?>
     </div>
     <ul class="articles_list">
         <?php 
-        if(in_category('novosti')){
+        if(in_category('novosti')) {
             set_query_var('thumbnail', 'none');
         }
         while(have_posts()): the_post(); 
