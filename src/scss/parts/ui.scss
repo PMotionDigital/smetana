@@ -150,6 +150,33 @@
     }
 }
 
+.ajax-load-more-wrap.white {
+    .alm-btn-wrap{
+        margin-top: 1rem;
+        padding: 0;
+        text-align: left;
+    }
+    button.alm-load-more-btn{
+        color: $grey-text;
+        font-size: .75rem;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        padding-left: 1.5rem;
+        height: max-content;
+        min-height: .5rem;
+        background:  url('../img/icons/undo.svg') left center no-repeat;
+        background-size: 1rem;
+        font-weight: 400;
+        &:hover{
+            background-image: url('../img/icons/undo-hover.svg');
+            color: $yellow;
+            box-shadow: none;
+        }
+    }
+
+}
+
 button[type="button"].button-sorting{
     position: relative;
     padding-right: 1rem;

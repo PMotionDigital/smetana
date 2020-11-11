@@ -2,7 +2,7 @@
 $cat = get_category_by_slug('novosti');
 $args = array(
     'post_type' => 'post',
-    'numberposts' => 10,
+    'numberposts' => 3,
     'category' => $cat->term_id
 );
 $posts = get_posts($args);
@@ -53,7 +53,8 @@ if($posts): ?>
         endforeach;
         echo '</ul>';
     ?>
+    <?php echo do_shortcode('[ajax_load_more loading_style="white" container_type="ul" post_type="post" posts_per_page="3" category="novosti" offset="3" pause="true" scroll="false" button_label="Загрузить ещё"]'); ?>
     </div>
-    <button type="button" class="icon-block undo news_button">Загрузить ещё</button>
+    <!-- <button type="button" class="icon-block undo news_button">Загрузить ещё</button> -->
 </section>
 <?php endif; ?>

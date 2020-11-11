@@ -80,6 +80,11 @@ function menu_item_count($output, $item, $depth, $args) {
 add_action("walker_nav_menu_start_el", "menu_item_count", 10, 4);
 
 
+add_action( 'after_setup_theme', function() {
+    add_theme_support( 'pageviews' );
+});
+
+
 
 // includes 
 include 'functions/starts-with.php';

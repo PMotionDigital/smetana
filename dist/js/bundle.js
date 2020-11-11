@@ -11037,19 +11037,21 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _parts_sorting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/sorting */ "./src/js/parts/sorting.js");
-/* harmony import */ var _parts_sorting__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_parts_sorting__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _parts_ajax_post_expand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/ajax/post-expand */ "./src/js/parts/ajax/post-expand.js");
-/* harmony import */ var _parts_ajax_archive_tezaurus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/ajax/archive-tezaurus */ "./src/js/parts/ajax/archive-tezaurus.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parts_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/header */ "./src/js/parts/header.js");
+/* harmony import */ var _parts_sorting__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/sorting */ "./src/js/parts/sorting.js");
+/* harmony import */ var _parts_sorting__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_parts_sorting__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _parts_ajax_post_expand__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parts/ajax/post-expand */ "./src/js/parts/ajax/post-expand.js");
+/* harmony import */ var _parts_ajax_archive_tezaurus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./parts/ajax/archive-tezaurus */ "./src/js/parts/ajax/archive-tezaurus.js");
+
+
 // files
     
     
     
+    
 //
-
-
 
 
 
@@ -11158,6 +11160,38 @@ expandButtons.forEach((button) => {
 });
 
 
+
+/***/ }),
+
+/***/ "./src/js/parts/header.js":
+/*!********************************!*\
+  !*** ./src/js/parts/header.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const burger = jquery__WEBPACK_IMPORTED_MODULE_0___default()('button[data-menu]');
+const menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()('aside[data-menu]');
+const search = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ajaxsearchlite1');
+
+burger.on('click', (evt) => {
+    evt.preventDefault();
+    burger.toggleClass('button-burger--opened');
+    menu.toggleClass('sidebar--opened');
+    search.toggleClass('opened');
+
+    if(menu.hasClass('sidebar--opened')){
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').css('overflow', 'hidden');
+    } else{
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').attr('style', '');
+    }
+})
 
 /***/ }),
 

@@ -16,9 +16,8 @@
             <img class="logo" src="/wp-content/themes/smetana/dist/img/logo.svg">
             <img class="logo-hover" src="/wp-content/themes/smetana/dist/img/logo-hover.svg">
         </a>
-        <form class="site-header_search">
+        <button type="button" class="button-burger" data-menu aria-label="Открыть меню"></button>
             <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-        </form>
         <!-- <div class="site-header_user-nav user-nav">
             <a class="user-nav_login" href="#">Войти</a>
         </div> -->

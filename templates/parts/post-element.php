@@ -19,10 +19,10 @@ $post_image = get_the_post_thumbnail_url();
                     }
                 ?>
                 <span class="article_date"><?php echo $date; the_time('j F в H:i'); ?></span>
-                <span class="icon-block views">888</span>
+                <span class="icon-block views"><?php do_action( 'pageviews' ); ?></span>
                 <?php $tags = wp_get_post_tags($post->ID); 
                 if($tags):
-                    $max_count = 2; ?>
+                    $max_count = 1; ?>
                 <div class="article_hashtags">
                     <?php foreach($tags as $count => $tag): 
                     $link = get_term_link($tag->term_id); 

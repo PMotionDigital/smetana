@@ -57,3 +57,21 @@
 .site-footer_subscription a:hover{
     color: $yellow;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .footer-top{
+        .site-footer_nav-item{
+            width: max-content;
+            margin-right: 1.5rem;
+        }
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer_nav{
+        justify-content: center;
+    }
+}

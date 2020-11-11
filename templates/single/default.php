@@ -37,7 +37,7 @@
             }
             ?>
             <span class="article_date"><?php echo $date; the_time(' в H:i j F'); ?></span>
-            <span class="icon-block views">888</span>
+            <span class="icon-block views"><?php do_action( 'pageviews' ); ?></span>
         </div>
         
         <?php if(has_post_thumbnail()): ?>
@@ -106,7 +106,7 @@
                             <a href="<?php the_permalink(); ?>">
                                 <h2 class="interesting_item-title"><?php the_title(); ?> </h2>
                             </a>
-                            <span class="icon-block views">888</span>
+                            <span class="icon-block views"><?php do_action( 'pageviews' ); ?></span>
                             <?php $tags = wp_get_post_tags($post->ID); 
                             if($tags):
                                 $max_count = 1; ?>
@@ -131,7 +131,8 @@
                     </li>
                 <?php endwhile; wp_reset_postdata(); ?>
             </ul>
-            <button type="button" class="icon-block undo interesting_button">Загрузить ещё</button>
+            <!-- <button type="button" class="icon-block undo interesting_button">Загрузить ещё</button> -->
+            <?php echo do_shortcode('[ajax_load_more loading_style="white" container_type="ul" repeater="repeater2" post_type="post" posts_per_page="3" pause="true" scroll="false" button_label="Загрузить ещё"]') ?>
         </div>
     </section>
     <?php 

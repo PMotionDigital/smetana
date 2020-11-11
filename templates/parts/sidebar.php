@@ -1,4 +1,4 @@
-<aside class="site-main_sidebar sidebar">
+<aside class="site-main_sidebar sidebar" data-menu>
     <nav class="site-main_nav main-nav">
         <?php echo do_shortcode('[widget id="nav_menu-2"]'); ?>
     </nav>

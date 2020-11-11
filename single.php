@@ -8,6 +8,6 @@
         <section class="third_ads">
             <img src="<?php bloginfo('template_url'); ?>/dist/img/ads-image.png">
         </section>
-        <?php setcookie('viewedProd['. $post->ID .']', $post->ID, time()+3600, COOKIEPATH, COOKIE_DOMAIN, false);?>
+        <?php setcookie('viewedProd['. $post->ID .']', $post->ID, time()+369900, COOKIEPATH, COOKIE_DOMAIN, false);?>
     
 <?php get_footer();

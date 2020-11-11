@@ -39,24 +39,6 @@
     }
 }
 
-
-// #ajaxsearchlite1 {
-//     //input{
-//         width: 20rem;
-//         padding: .625rem .75rem;
-//         border-radius: .25rem;
-//         font-size: .75rem;
-//         border: none;
-//         outline: none;
-//         background-color: $white;
-
-//         &::placeholder{
-//             color: #BDBDBD;
-
-//         }
-//     //}
-// }
-
 #ajaxsearchlite1,
 div.asl_w {
     width: 20rem;
@@ -88,6 +70,10 @@ div.asl_w {
     }
 }
 
+.button-burger{
+    display: none;
+}
+
 .site-header_user-nav{
     display: flex;
     justify-content: flex-end;
@@ -96,4 +82,72 @@ div.asl_w {
     font-size: .875rem;
     color: $white;
     background: url('../img/icons/exit.svg') right 0 no-repeat;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .site-header{
+        padding: .75rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site-header_logo{
+        margin-left: 0;
+        width: 8rem;
+    }
+
+    #ajaxsearchlite1,
+    div.asl_w {
+        width: calc(100% - 2rem);
+        margin: .75rem 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        border: 1px solid $border-line !important;
+        transition: .3s ease-out;
+    }
+    #ajaxsearchlite1.opened{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .button-burger{
+        display: block;
+        width: 2rem;
+        padding: 1rem 0;
+        position: relative;
+
+        &::before,
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: .25rem;
+            background-color: $white;
+            border-radius: .125rem;
+            transition: .3s ease-out;
+            left: 0;
+        }
+
+        &::before{
+            top: .4rem;
+        }
+        &::after{
+            bottom: .4rem;
+        }
+    }
+
+    .button-burger--opened{
+        &::before{
+            transform: translateY(.5rem) rotate(45deg);
+        }
+        &::after{
+            transform: translateY(-.45rem) rotate(-45deg);
+        }
+    }
+
 }

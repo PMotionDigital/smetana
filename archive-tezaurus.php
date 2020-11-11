@@ -53,38 +53,48 @@ get_header(); ?>
                 <div class="section-head">
                     <h2 class="head_title">Вы недавно смотрели</h2>
                 </div>
-                <?php
-                echo $_COOKIE['viewedProd'];
-                if ( $_COOKIE['viewedProd'] ){
-                    // echo 'Вы просмотрели следующие посты:<br>';
-                    foreach ($_COOKIE['viewedProd'] as $viewedProdId ){
-                        $viewedProd = get_post( $viewedProdId );
-                        get_template_part('templates/parts/post-element');
+                <ul>
+                    <?php
+                    
+                    if ( $_COOKIE['viewedProd'] ){
+                        
+                        //echo 'Вы просмотрели следующие посты:<br>';
+                        foreach ($_COOKIE['viewedProd'] as $viewedProdId ){
+                            $viewedProd = get_post( $viewedProdId ); ?>
+
+                            <li class="interesting_item">
+                                <div class="item-head dis-flex">
+                                    <a href="<?php echo get_the_permalink($viewedProd->ID); ?>"><h3 class="interesting_item-title"><?php echo $viewedProd->post_title ?> </h3></a>
+                                    <span class="icon-block views"><?php do_action( 'pageviews' ); ?></span>
+                                    <?php $tags = wp_get_post_tags($viewedProd->ID); 
+                                        if($tags):
+                                            $max_count = 2; ?>
+                                        <div class="article_hashtags">
+                                            <?php foreach($tags as $count => $tag): 
+                                            $link = get_term_link($tag->term_id); 
+                                                if($count < $max_count):?>
+                                                <a href="<?php echo $link; ?>" class="article_hashtag"><?php echo '#'.$tag->name; ?></a>
+                                                <?php 
+                                                endif;
+                                            endforeach; ?>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="interesting_item-desc">
+                                    <?php print_r($viewedProd->post_excerpt); ?>
+                                </div>
+                                <!-- <div class="article_item-bottom dis-flex">
+                                    <button type="button" class="icon-block comments-icon">Комментировать</button>
+                                    <button type="button" class="icon-block like">Нравится</button>
+                                    <button type="button" class="icon-block blog-icon">В блог</button>
+                                    <button type="button" class="icon-block favorites">В избранное</button>
+                                </div> -->
+                            </li>
+                        <?php }
+                        
                     }
                     
-                }
-                
-                ?>
-                <ul>
-                    <li class="interesting_item">
-                        <div class="item-head dis-flex">
-                            <a href="#"><h3 class="interesting_item-title">Учитывая </h3></a>
-                            <span class="icon-block views">888</span>
-                            <div class="article_hashtags">
-                                <a href="#" class="article_hashtag">#Автограф</a>
-                            </div>
-                        </div>
-                        <div class="interesting_item-desc">
-                            Прежде всего, начало повседневной работы по формированию позиции не
-                            оставляет шанса для системы обучения кадров, соответствующей.
-                                </div>
-                        <div class="article_item-bottom dis-flex">
-                            <button type="button" class="icon-block comments-icon">Комментировать</button>
-                            <button type="button" class="icon-block like">Нравится</button>
-                            <button type="button" class="icon-block blog-icon">В блог</button>
-                            <button type="button" class="icon-block favorites">В избранное</button>
-                        </div>
-                    </li>
+                    ?>
                 </ul>
             </section>
             

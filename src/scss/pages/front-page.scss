@@ -29,3 +29,17 @@
 .full-center {
     grid-column: 1/3;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .site-main{
+        grid-template-columns: 100%;
+        padding: 0 1rem;
+        padding-top: 5.5rem;
+
+        &_wrapper{
+            grid-template-columns: 100%;
+            grid-gap: 0;
+        }
+    }
+}

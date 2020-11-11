@@ -4,7 +4,7 @@
         <footer class="site-footer">
             <div class="wrapper col-lg-11">
                 <div class="site-footer_section footer-top dis-flex justify-content-between">
-                    <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-5">
+                    <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-5 col-xs-12">
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Новости</a>
                         </li>
@@ -35,7 +35,7 @@
                     </div> -->
                 </div>
                 <div class="site-footer_section footer-bottom dis-flex justify-content-between">
-                    <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-8">
+                    <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-8 col-xs-12">
                         <li class="site-footer_nav-item">
                             <a href="#">Авторы</a>
                         </li>
@@ -67,7 +67,7 @@
                             <a href="#">Работа</a>
                         </li>
                     </ul>
-                    <div class="site-footer_age">
+                    <div class="site-footer_age col-xs-5">
                         <span>18+</span>
                         <img src="/wp-content/themes/smetana/dist/img/footer-bottom.png">
                     </div>
