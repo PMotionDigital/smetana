@@ -1,4 +1,4 @@
-<!-- <section class="site-main_comments comments section">
+<section class="site-main_comments comments section">
     <div class="section-head  dis-flex justify-content-between">
         <h2 class="head_title">Комментарии</h2>
     </div>
@@ -180,4 +180,4 @@
             <a href="#" class="comment_post">Следует отметить, что это современная методология разработки. </a>
         </li>
     </ul>
-</section> -->
+</section>

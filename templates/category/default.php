@@ -1,16 +1,20 @@
 <?php 
-
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
 if(have_posts()): ?>
-<section class="main_articles articles section default-category">
+
+<section class="main_articles articles section default-category" 
+    data-post-container
+    data-tax-id="<?php echo get_queried_object()->term_id; ?>"
+    data-tax="<?php echo get_queried_object()->taxonomy; ?>"
+    data-page-id="1"
+    data-order="date">
     <div class="section-head main-head dis-flex justify-content-between">
         <h2 class="head_title"><?php echo single_cat_title(); ?></h2>
-        <div>
-            <button type="button" class="icon-block calendar head_button">Период</button>
-            <button type="button" class="head_button button-sorting" data-sorting>Сортировка</button>
-        </div>
+        <?php get_template_part('templates/components/sorting-buttons'); ?>
         <?php get_template_part('templates/components/sorting'); ?>
     </div>
-    <ul class="articles_list">
+    <ul class="articles_list" data-list>
         <?php 
         if(in_category('novosti')) {
             set_query_var('thumbnail', 'none');

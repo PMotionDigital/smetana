@@ -11,13 +11,18 @@
         }
     ?>
 <body <?php body_class(array($mobile)); ?>>
-    <header class="site-header">
+    <header class="site-header no-print">
         <a href="/" class="site-header_logo">
             <img class="logo" src="/wp-content/themes/smetana/dist/img/logo.svg">
             <img class="logo-hover" src="/wp-content/themes/smetana/dist/img/logo-hover.svg">
         </a>
+
+        <?php if(wp_is_mobile()): ?>
         <button type="button" class="button-burger" data-menu aria-label="Открыть меню"></button>
+        <?php endif; ?>
+        
             <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+            
         <!-- <div class="site-header_user-nav user-nav">
             <a class="user-nav_login" href="#">Войти</a>
         </div> -->

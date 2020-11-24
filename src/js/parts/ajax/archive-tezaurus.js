@@ -1,44 +1,40 @@
 import $, { get } from 'jquery';
-import { doc } from 'prettier';
-const expandButtons = document.querySelectorAll('[data-expand]');
+import hui from './ajax';
 const letterButton = $('button[data-letter]');
+const inputSearch = $('input.thesaurus_search');
+const mainContainer = letterButton.closest('.site-main_main-section');
 
-
-const getTezaurus = (letter, action) => {
-    $.ajax({
-        url: `${window.location.origin}/wp-admin/admin-ajax.php`,
-        method: 'GET',
-        cahce: false,
-        data: {
-            action: action,
-            letter: letter
-        },
-        beforeSend: () => {
-            console.log('ушел запросичек');
-        },
-        success: (data) => {
-            const response = JSON.parse(data);
-            console.log(response); 
-            $('.changable-container').html(response.html);
-        }
-    });
+const getTezaurus = (data) => {
+    const response = JSON.parse(data);
+    mainContainer.html(response.html);
+}
+window.onpopstate = function(e){
+    if(e.state == 'tez'){
+        e.preventDefault();
+    }
 };
-
-letterButton.on('click', (evt) => {
+$(document).on('click', 'button[data-letter]', (evt) => {
     evt.preventDefault();
+    console.log(evt.target);
+    history.pushState('tez', '', window.location.origin + '/tezaurus/');
     const target = $(evt.currentTarget);
     const letterItem = target.data('letter');
+    let dataTezaurus = {
+        action: 'search_by_letter',
+        letter: letterItem
+    };
 
     
     $('.letter.letter--current').removeClass('letter--current');
     target.addClass('letter--current');
-    getTezaurus(letterItem, 'search_by_letter');
+    hui.getRequest('GET', dataTezaurus, getTezaurus);
 });
 
-// $(document).on('click', '[data-word-id]', (e) => {
-//     e.preventDefault();
-//     const wordId = $(e.currentTarget).data('word-id');
-//     getTezaurus(wordId, 'get_single_word');
-// });
-
+$(document).on('change', 'input.thesaurus_search', () => {
+    let dataTezaurus = {
+        action: 'search_by_letter',
+        letter: $('input.thesaurus_search').val().trim().toLowerCase()
+    };
+    hui.getRequest('GET', dataTezaurus, getTezaurus);
+});
 

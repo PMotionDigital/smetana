@@ -2,59 +2,65 @@
 $cat = get_category_by_slug('novosti');
 $args = array(
     'post_type' => 'post',
-    'numberposts' => 3,
+    'numberposts' => get_option('posts_per_page'),
     'category' => $cat->term_id
 );
 $posts = get_posts($args);
 if($posts): ?>
 
 
-<section class="main_news news section">
+<section class="main_news news section"
+    data-post-container
+    data-tax-id="<?php echo $cat->term_id; ?>"
+    data-tax="category"
+    data-page-id="1"
+    data-template="news-element"
+    data-order="date">
     <div class="section-head main-head dis-flex justify-content-between">
         <h2 class="head_title">Новости</h2>
-        <div>
-            <button type="button" class="icon-block calendar head_button">Период</button>
-            <button type="button" class="head_button button-sorting" data-sorting>По просмотрам</button>
-        </div>
+        <?php get_template_part('templates/components/sorting-buttons'); ?>
         <?php get_template_part('templates/components/sorting'); ?>
     </div>
-    <div class="news_section"> 
+   
+    <div class="news_section" > 
+    <ul class="news_list" data-list>
     <?php
      
         $prev_date = '';
         $count = 0;
         echo '<ul class="news_list">';
         foreach($posts as $post): setup_postdata($post);
-            if($count == 0):
-                $prev_date = get_the_time('Yd');
-            endif;
+            // if($count == 0):
+            //     $prev_date = get_the_time('Yd');
+            // endif;
 
-            if($prev_date != get_the_time('Yd')):
-                ?></ul>
+            // if($prev_date != get_the_time('Yd')):
+                ?>
+                <!-- </ul>
                 </div>
                 <div class="news_section">
-                    <div class="news_section-title">
+                    <div class="news_section-title"> -->
                     <?php 
-                        if(get_the_time('Yd') == current_time('Yd') - 1) {
-                            $date = 'Вчера, ';
-                        } else {
-                            $date = '';
-                        }
-                        echo $date .' '.get_the_time('j F');
+                        // if(get_the_time('Yd') == current_time('Yd') - 1) {
+                        //     $date = 'Вчера, ';
+                        // } else {
+                        //     $date = '';
+                        // }
+                        // echo $date .' '.get_the_time('j F Y');
                     ?>
-                    </div>
-                    <ul class="news_list"> 
+                    <!-- </div>
+                    <ul class="news_list">  -->
                 <?php
 
-                $prev_date = get_the_time('Yd');
-            endif;
+                //$prev_date = get_the_time('Yd');
+            //endif;
             get_template_part('templates/parts/news-element');
-            $count ++;
+            //$count ++;
         endforeach;
-        echo '</ul>';
+        //echo '</ul>';
     ?>
-    <?php echo do_shortcode('[ajax_load_more loading_style="white" container_type="ul" post_type="post" posts_per_page="3" category="novosti" offset="3" pause="true" scroll="false" button_label="Загрузить ещё"]'); ?>
+        </ul>
     </div>
-    <!-- <button type="button" class="icon-block undo news_button">Загрузить ещё</button> -->
+    <button type="button" class="icon-block undo news_button" data-load-more>Загрузить ещё</button>
 </section>
 <?php endif; ?>

@@ -1,6 +1,10 @@
 <?php 
 get_header(); ?>
 
+<a href="#" class="category_ads full-center">
+                    <img src="<?php bloginfo('template_url'); ?>/dist/img/ads-block.png">
+                </a>
+
         <section class="site-main_main-section main">
             <section class="main-thesaurus thesaurus section">
                 <div class="section-head dis-flex justify-content-between">
@@ -36,7 +40,7 @@ get_header(); ?>
                                 foreach ($posts as $post) {
                                     setup_postdata($post); ?>
 
-                                <li class="recent_item item col-lg-4" data-word-id="<?php the_ID(); ?>">
+                                <li class="recent_item item col-lg-12" data-word-id="<?php the_ID(); ?>">
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </li>
                             <?php    }
@@ -55,51 +59,56 @@ get_header(); ?>
                 </div>
                 <ul>
                     <?php
-                    
-                    if ( $_COOKIE['viewedProd'] ){
-                        
-                        //echo 'Вы просмотрели следующие посты:<br>';
-                        foreach ($_COOKIE['viewedProd'] as $viewedProdId ){
-                            $viewedProd = get_post( $viewedProdId ); ?>
+                    if ( $_COOKIE['viewedProd'] ):
+                        $max = 3;
+                        $count_ = 0;
+                        $viewedArray = array_reverse($_COOKIE['viewedProd']);
 
-                            <li class="interesting_item">
-                                <div class="item-head dis-flex">
-                                    <a href="<?php echo get_the_permalink($viewedProd->ID); ?>"><h3 class="interesting_item-title"><?php echo $viewedProd->post_title ?> </h3></a>
-                                    <span class="icon-block views"><?php do_action( 'pageviews' ); ?></span>
-                                    <?php $tags = wp_get_post_tags($viewedProd->ID); 
-                                        if($tags):
-                                            $max_count = 2; ?>
-                                        <div class="article_hashtags">
-                                            <?php foreach($tags as $count => $tag): 
-                                            $link = get_term_link($tag->term_id); 
-                                                if($count < $max_count):?>
-                                                <a href="<?php echo $link; ?>" class="article_hashtag"><?php echo '#'.$tag->name; ?></a>
-                                                <?php 
-                                                endif;
-                                            endforeach; ?>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-                                <div class="interesting_item-desc">
-                                    <?php print_r($viewedProd->post_excerpt); ?>
-                                </div>
-                                <!-- <div class="article_item-bottom dis-flex">
-                                    <button type="button" class="icon-block comments-icon">Комментировать</button>
-                                    <button type="button" class="icon-block like">Нравится</button>
-                                    <button type="button" class="icon-block blog-icon">В блог</button>
-                                    <button type="button" class="icon-block favorites">В избранное</button>
-                                </div> -->
-                            </li>
-                        <?php }
-                        
-                    }
+                        foreach ($viewedArray as $viewedProdId ):
+                            
+                            
+                            if ($count_ < $max):
+                                $viewedProd = get_post( $viewedProdId );  ?>
+                                <li class="interesting_item">
+                                    <div class="item-head dis-flex">
+                                        <a href="<?php echo get_the_permalink($viewedProd->ID); ?>"><h3 class="interesting_item-title"><?php echo $viewedProd->post_title ?> </h3></a>
+                                        <span class="icon-block views"><?php echo get_post_meta($viewedProd->ID, 'просмотры', true) ?></span>
+                                        <?php $tags = wp_get_post_tags($viewedProd->ID); 
+                                            if($tags):
+                                                $max_count = 1; ?>
+                                            <div class="article_hashtags">
+                                                <?php foreach($tags as $count => $tag): 
+                                                $link = get_term_link($tag->term_id); 
+                                                    if($count < $max_count): ?>
+                                                    <a href="<?php echo $link; ?>" class="article_hashtag"><?php echo '#'.$tag->name; ?></a>
+                                                    <?php 
+                                                    endif;
+                                                endforeach; ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="interesting_item-desc">
+                                        <?php print_r($viewedProd->post_excerpt); ?>
+                                    </div>
+                                    <!-- <div class="article_item-bottom dis-flex">
+                                        <button type="button" class="icon-block comments-icon">Комментировать</button>
+                                        <button type="button" class="icon-block like">Нравится</button>
+                                        <button type="button" class="icon-block blog-icon">В блог</button>
+                                        <button type="button" class="icon-block favorites">В избранное</button>
+                                    </div> -->
+                                </li><?php 
+                            endif;
+                         
+                        $count_ ++;
+                        endforeach;
+                    endif;
                     
                     ?>
                 </ul>
             </section>
             
         </section>
-        <section class="site-main_third-section third">
+        <section class="site-main_third-section third no-print">
             <section class="third_ads">
                 <img src="<?php bloginfo('template_url'); ?>/dist/img/ads-image.png">
             </section>

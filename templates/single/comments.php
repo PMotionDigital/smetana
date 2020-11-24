@@ -2,7 +2,7 @@
 $default_avatar = 'https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg';
 $user_ID = get_current_user_id();
 ?>
-<section class="section single-post_comments">
+<section class="section single-post_comments no-print">
     <div class="section-head dis-flex justify-content-between">
         <p class="head_title">Комментарии</p>
     </div>
@@ -21,9 +21,11 @@ $user_ID = get_current_user_id();
                 </div> 
             <?php else : ?>  
                 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">  
-                    <?php if($user_ID) : ?>  
+                <!--    
+                <?php if($user_ID) : ?>  
                         <p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></p>  
                     <?php endif; ?>
+                -->
                     <p><textarea name="comment" id="comment" rows="3" tabindex="4" placeholder="Комментировать"></textarea></p>
                     <?php //show_subscription_checkbox(); ?>
                     <p class="buttons dis-flex">

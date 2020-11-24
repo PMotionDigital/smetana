@@ -1,33 +1,34 @@
 </section>
 <?php get_template_part('templates/parts/comments-section'); ?>
+<?php get_template_part('templates/components/preloader'); ?>
     </main>
-        <footer class="site-footer">
+        <footer class="site-footer no-print">
             <div class="wrapper col-lg-11">
                 <div class="site-footer_section footer-top dis-flex justify-content-between">
                     <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-5 col-xs-12">
                         <li class="site-footer_nav-item col-lg-3">
-                            <a href="#">Новости</a>
+                            <a href="/novosti">Новости</a>
                         </li>
                         <li class="site-footer_nav-item col-lg-3">
-                            <a href="#">Рубрикатор</a>
+                            <a href="/rubrikator">Рубрикатор</a>
                         </li>
-                        <!-- <li class="site-footer_nav-item col-lg-3">
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">События</a>
                         </li>
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Инструменты</a>
-                        </li> -->
-                        <li class="site-footer_nav-item col-lg-3">
-                            <a href="#">Статьи</a>
                         </li>
-                        <!-- <li class="site-footer_nav-item col-lg-3">
+                        <li class="site-footer_nav-item col-lg-3">
+                            <a href="/stati">Статьи</a>
+                        </li>
+                        <li class="site-footer_nav-item col-lg-3">
                             <a href="#">База знаний</a>
                         </li>
                         <li class="site-footer_nav-item col-lg-3">
                             <a href="#">Дневники</a>
-                        </li> -->
+                        </li>
                         <li class="site-footer_nav-item col-lg-3">
-                            <a href="#">Тезаурус</a>
+                            <a href="/tezaurus">Тезаурус</a>
                         </li>
                     </ul>
                     <!-- <div class="site-footer_subscription">
@@ -35,36 +36,27 @@
                     </div> -->
                 </div>
                 <div class="site-footer_section footer-bottom dis-flex justify-content-between">
-                    <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-8 col-xs-12">
+                    <ul class="site-footer_nav dis-flex flex-wrap-wrap col-lg-9 col-xs-12">
                         <li class="site-footer_nav-item">
-                            <a href="#">Авторы</a>
+                            <a href="/privacy-policy">Пользовательское соглашение</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">Источники</a>
+                            <a href="/privacy-policy">Архив</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">Пользовательское соглашение</a>
+                            <a href="/privacy-policy">Правила пользования материалами</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">Архив</a>
+                            <a href="/privacy-policy">О проекте</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">Создание сайта</a>
+                            <a href="/privacy-policy">Реклама</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">Правила пользования материалами</a>
+                            <a href="/privacy-policy">Контакты редакции</a>
                         </li>
                         <li class="site-footer_nav-item">
-                            <a href="#">О проекте</a>
-                        </li>
-                        <li class="site-footer_nav-item">
-                            <a href="#">Реклама</a>
-                        </li>
-                        <li class="site-footer_nav-item">
-                            <a href="#">Контакты редакции</a>
-                        </li>
-                        <li class="site-footer_nav-item">
-                            <a href="#">Работа</a>
+                            <a href="/privacy-policy">Работа</a>
                         </li>
                     </ul>
                     <div class="site-footer_age col-xs-5">
@@ -75,5 +67,6 @@
             </div>
         </footer>
         <?php wp_footer(); ?>
+        
     </body>
 </html>

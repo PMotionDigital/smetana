@@ -1,9 +1,9 @@
-<aside class="site-main_sidebar sidebar" data-menu>
+<aside class="site-main_sidebar sidebar no-print" data-menu>
     <nav class="site-main_nav main-nav">
         <?php echo do_shortcode('[widget id="nav_menu-2"]'); ?>
     </nav>
     
-    <!-- <div class="sidebar_section sidebar-tools section">
+    <div class="sidebar_section sidebar-tools section">
         <div class="section-head dis-flex justify-content-between">
             <h2 class="head_title">Инструменты</h2>
             <a href="#" class="head_button">Смотреть все</a>
@@ -44,8 +44,8 @@
                 <a href="#">Рассчёт НМЦК</a>
             </div>
         </div>
-    </div> -->
-    <!-- <div class="sidebar_section section">
+    </div>
+    <div class="sidebar_section section">
         <div class="section-head dis-flex justify-content-between">
             <h2 class="head_title">События</h2>
             <a href="#" class="head_button">Смотреть все</a>
@@ -84,13 +84,13 @@
                 </li>
             </ul>
         </div>
-    </div> -->
+    </div>
     <div class="sidebar_section sidebar_buttons section">
-        <a class="sidebar_button" href="#">
+        <a class="sidebar_button" href="/o-proekte">
             <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/about.svg">
             <p>О проекте</p>
         </a>
-        <a class="sidebar_button" href="#">
+        <a class="sidebar_button" href="/reklama">
             <img src="<?php bloginfo('template_url'); ?>/dist/img/icons/sidebar/ads.svg">
             <p>Реклама</p>
         </a>
@@ -102,27 +102,17 @@
         <div class="sidebar_section-content">
             <ul class="dis-flex flex-wrap-wrap socials">
                 <li class="socials_item">
-                    <a href="#">
+                    <a href="https://vk.com/smetana_journal" target="_blank">
                         <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/vk.png">
                     </a>
                 </li>
                 <li class="socials_item">
-                    <a href="#">
-                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/telegram.png">
-                    </a>
-                </li>
-                <li class="socials_item">
-                    <a href="#">
+                    <a href="https://www.facebook.com/smetana.journal" target="_blank">
                         <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/facebook.png">
                     </a>
                 </li>
                 <li class="socials_item">
-                    <a href="#">
-                        <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/odnoklassniki.png">
-                    </a>
-                </li>
-                <li class="socials_item">
-                    <a href="#">
+                    <a href="https://www.instagram.com/smetana.journal/" target="_blank">
                         <img src="/wp-content/themes/smetana/dist/img/icons/sidebar/instagram.svg">
                     </a>
                 </li>

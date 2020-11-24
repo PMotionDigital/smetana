@@ -7,7 +7,7 @@ const search = $('#ajaxsearchlite1');
 burger.on('click', (evt) => {
     evt.preventDefault();
     burger.toggleClass('button-burger--opened');
-    menu.toggleClass('sidebar--opened');
+    menu.slideToggle();
     search.toggleClass('opened');
 
     if(menu.hasClass('sidebar--opened')){

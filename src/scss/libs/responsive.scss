@@ -5,4 +5,8 @@
      .site-main {
         grid-template-columns: 15% minmax(auto, 60rem) 15% !important;
      }
+     .site-header{
+         grid-template-columns: 15% minmax(auto, 60rem) 15% !important;
+         justify-content: space-between;
+     }
 }

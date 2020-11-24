@@ -61,6 +61,13 @@
         background-color: $light-yellow;
         border: 1px solid $yellow-border;
 
+
+        button[data-expand]{
+            display: none;
+        }
+
+        
+
         .favorites{
             display: none;
         }

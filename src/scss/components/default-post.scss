@@ -84,15 +84,37 @@
 .single-post_author{
     display:inline-block;
     font-weight: 500;
-    padding: 1rem 0;
 }
 
 .single-post_source{
     padding-bottom: 0;
+    padding-left: .5rem;
 }
 
 .single-post_author{
     text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.single-post_desc{
+    p{
+        display: flex;
+        padding-top: 1rem;
+    }
+}
+
+.post-expand_desc{
+    .single-post_source{
+        padding-top: 0;
+    }
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
+.single-post_source:hover,
+.single-post_author:hover{
+    color: $yellow;
 }
 
 
@@ -159,6 +181,7 @@
 
 
 
+
 // Post interesting
 
 .single-post_interesting{
@@ -199,5 +222,16 @@
         margin-left: auto;
         display: flex;
         align-items: center;
+    }
+    .article_hashtag{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .single-post_content{
+        .wp-block-quote{
+            padding-left: 40%;
+        }
     }
 }

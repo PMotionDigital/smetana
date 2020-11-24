@@ -1,0 +1,19 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba($white, .5);
+    z-index: 9999999999;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-out;
+
+    &--active{
+        visibility: visible;
+        opacity: 1;
+    }
+}

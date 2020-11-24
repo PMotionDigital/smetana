@@ -2,15 +2,17 @@
 /* 
 Template name:  Страница рубрикатор
 */
-get_header(); ?>
+get_header(); 
+
+?>
  
         <section class="rubricator section full-center">
             <div class="section-head dis-flex justify-content-between">
                 <h1 class="head_title">Рубрикатор</h1>
-                <div>
+                <!-- <div>
                     <button type="button" class="icon-block calendar head_button">Период</button>
                     <button type="button" class="head_button button-sorting" data-sorting>Сортировка</button>
-                </div>
+                </div> -->
                 <?php get_template_part('templates/components/sorting'); ?>
             </div>
             
@@ -34,10 +36,6 @@ get_header(); ?>
                                     <?php echo $pterm->name ?>
                                 </h2>
                                 <span class="heading_counter"><?php 
-                                    foreach ($terms as $term) {
-                                        $count +=$term->count;
-                                    }
-
                                     echo $count;
                                 ?></span>
                             </a> 
